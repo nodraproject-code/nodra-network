@@ -1,52 +1,175 @@
-# Nodra
+# NODRA Network
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.18.
+**Human Signal for the AI Era**
 
-## Development server
+## Overview
 
-To start a local development server, run:
+NODRA Network is an independent digital project exploring how human signal contribution could become a meaningful framework in the AI era. We're building identity, community, and documentation as we progress through our roadmap.
 
-```bash
-ng serve
-```
+**Current Status:** Phase 1 — Identity & Vision  
+**Stage:** Early conceptual, no active token, no financial offerings
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## What is NODRA?
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+NODRA Network is a framework for capturing, valuing, and potentially rewarding human signal in an age of artificial intelligence. We believe meaningful human contributions—expertise, insights, verification, and participation—have intrinsic value that should be recognized.
 
-```bash
-ng generate component component-name
-```
+This is **not** a financial investment opportunity. This is a conceptual exploration of how human signal could be organized in a decentralized context.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Quick Start
 
-## Building
+### Prerequisites
+- Node.js 18+ and npm
+- Angular CLI 19+
 
-To build the project run:
+### Installation
 
 ```bash
-ng build
+# Clone or download the project
+cd nodra
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The application will open at `http://localhost:4200/`
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Build
 
 ```bash
-ng test
+# Development build
+npm run build
+
+# Or with watch mode
+npm run watch
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Project Structure
+
+```
+nodra/
+├── src/
+│   ├── app/
+│   │   ├── app.component.ts       # Main component with interactivity
+│   │   ├── app.component.html     # Landing page template
+│   │   ├── app.component.css      # Styling & animations
+│   │   ├── app.config.ts          # Angular configuration
+│   │   └── app.routes.ts          # Routing setup
+│   ├── styles.css                 # Global styles
+│   ├── main.ts                    # Application entry
+│   └── index.html                 # HTML entry point
+├── docs/                          # Documentation
+│   ├── whitepaper-lite.md         # Vision & technical overview
+│   ├── roadmap.md                 # Project phases & timeline
+│   ├── project-status.md          # Current state & progress
+│   └── risk-notice.md             # Risk disclaimer & warnings
+├── angular.json                   # Angular configuration
+├── tsconfig.json                  # TypeScript configuration
+└── package.json                   # Dependencies & scripts
+```
+
+---
+
+## Technology Stack
+
+- **Framework:** Angular 19.2.0 (standalone components)
+- **Language:** TypeScript 5.7.2
+- **Styling:** Pure CSS3 (no frameworks)
+- **Build Tool:** Angular CLI 19.2.18
+- **Development:** Local dev server with HMR
+
+---
+
+## Key Features
+
+✨ **Dark Elegant Design** — Futuristic aesthetic with cyan/green accents  
+🎯 **Smooth Navigation** — Internal smooth-scroll and external link handling  
+📱 **Responsive Design** — Mobile-first approach across all breakpoints  
+🎨 **Pure CSS Animations** — No animation libraries, pure @keyframes  
+🌐 **Bilingual Content** — English & Spanish throughout  
+♿ **Semantic HTML** — Accessible, semantic HTML structure  
+⚡ **Zero Build Warnings** — Clean Angular compilation  
+
+---
+
+## Available Scripts
+
+| Command | Purpose |
+|---------|---------|
+| `npm start` | Start dev server (localhost:4200) |
+| `npm run build` | Production build to dist/ |
+| `npm run watch` | Build in watch mode |
+| `npm test` | Run unit tests |
+
+---
+
+## Documentation
+
+For detailed information, see the `/docs` folder:
+
+- **[Whitepaper (Lite)](./docs/whitepaper-lite.md)** — Vision, problem statement, and technical approach
+- **[Roadmap](./docs/roadmap.md)** — Planned phases and timeline
+- **[Project Status](./docs/project-status.md)** — Current state and what's active
+- **[Risk Notice](./docs/risk-notice.md)** — Important disclaimers and warnings
+
+---
+
+## Important Notices
+
+⚠️ **This is an experimental project in early stages.**
+
+- NODRA Network is **not** an investment opportunity
+- No token is currently active or trading
+- No financial guarantees or promises of value
+- No financial, investment, or legal advice is provided
+- This is a conceptual exploration, not a finalized product
+- Any future developments will require legal, accounting, and technical review
+
+See [Risk Notice](./docs/risk-notice.md) for complete disclaimers.
+
+---
+
+## Roadmap Phases
+
+1. **Phase 1 — Identity & Vision** (Current) — Build landing page, documentation, and identity
+2. **Phase 2 — Community** — Create spaces for discussion and contribution
+3. **Phase 3 — Prototype** — Develop core concepts and verification systems
+4. **Phase 4 — Token Exploration** — Research technical and legal aspects
+5. **Phase 5 — Ecosystem** — Integration and expansion (if viable)
+
+See [Roadmap](./docs/roadmap.md) for details.
+
+---
+
+## Contributing
+
+NODRA Network is currently in conceptual phase. For inquiries or contributions, please reach out through our social channels.
+
+---
+
+## License
+
+[Specify license if applicable]
+
+---
+
+## Disclaimer
+
+NODRA Network is provided "as is" for educational and exploratory purposes. No warranties, express or implied, are provided. See [Risk Notice](./docs/risk-notice.md) for complete terms.
+
+---
+
+**Last Updated:** May 2026  
+**Version:** 0.1.0  
+**Stage:** Phase 1 — Identity & Vision
 
 ```bash
 ng e2e

@@ -1,0 +1,23 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Dengar todo por defecto (infraestructura preparada, no pública aún)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Placeholder: futuras colecciones de NODRA
+    // - users: Perfiles de usuario (human signal)
+    // - signals: Señales humanas registradas
+    // - communities: Comunidades y redes
+    // - content: Contenido generado por usuarios
+    // - interactions: Interacciones y engagement
+    
+    // Cuando se integre:
+    // - Validación de autenticación
+    // - Autorización por rol
+    // - Validación de datos
+    // - Indexes para búsqueda
+  }
+}

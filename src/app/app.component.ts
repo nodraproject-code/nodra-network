@@ -9,4 +9,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'nodra';
+
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  openLink(url: string) {
+    if (url && url !== '#') {
+      window.open(url, '_blank');
+    }
+  }
 }
