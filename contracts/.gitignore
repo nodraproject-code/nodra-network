@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+typechain-types/
+.hardhat
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.mocha
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
