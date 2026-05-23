@@ -1,7 +1,7 @@
 # NODRA Token Status
 
-**Last Updated:** May 23, 2026  
-**Status:** Phase 1 Development — Testnet Ready  
+**Last Updated:** May 23, 2026 (Testnet Deployed)  
+**Status:** Phase 1 Development — Testnet Deployed  
 **Network Focus:** BNB Smart Chain (BSC)
 
 ---
@@ -14,7 +14,7 @@
 | **Contract Compiled** | ✅ Yes | Solidity 0.8.20, no warnings |
 | **Tests Passed** | ✅ Yes | 12/12 tests passing |
 | **Local Deploy** | ✅ Yes | Verified on Hardhat network |
-| **Testnet Deploy** | ⏳ Ready | Awaiting wallet setup |
+| **Testnet Deploy** | ✅ Yes | Deployed on BSC Testnet (ChainID 97) |
 | **Mainnet Deploy** | ❌ Not Yet | Approval required |
 
 ---
@@ -113,12 +113,12 @@ Base:           Solidity 0.8.20
 
 | Item | Status | Value |
 |------|--------|-------|
-| Chain | Ready | BSC Testnet (Chain ID: 97) |
-| RPC | Ready | https://data-seed-prebsc-1-e05a9c41c88f10b3393149fb8c4430341f12d9359:8545 |
-| Explorer | Ready | https://testnet.bscscan.com |
-| Faucet | Ready | https://testnet.binance.org/faucet |
-| Contract | ⏳ Pending | Awaiting deployment |
-| Status | ⏳ Ready | Can deploy when authorized |
+| Chain | ✅ Live | BSC Testnet (Chain ID: 97) |
+| RPC | ✅ Live | https://data-seed-prebsc-1-e05a9c41c88f10b3393149fb8c4430341f12d9359:8545 |
+| Explorer | ✅ Live | https://testnet.bscscan.com |
+| Faucet | ✅ Live | https://testnet.binance.org/faucet |
+| Contract | ✅ Deployed | 0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46 |
+| Status | ✅ Deployed | Live on testnet (May 23, 2026) |
 
 **Testnet Note:** Testnet tokens have ZERO market value. This is for testing only.
 
@@ -201,21 +201,24 @@ contracts/
 
 ---
 
-## Testnet Addresses (When Deployed)
+## Testnet Addresses (Deployed)
 
-**Coming Soon**
+✅ **Deployed May 23, 2026**
 
-When testnet deployment is authorized, addresses will be published here:
+Testnet deployment is now live:
 
 ```
-Testnet Contract Address: [To be added]
-Testnet Deployer: [To be added]
-Transaction Hash: [To be added]
-Block: [To be added]
-Date Deployed: [To be added]
+Testnet Contract Address: 0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46
+Testnet Deployer Address: 0x3550b4E95636e41B5FBbE13F300868144D30E4bA
+Network: BNB Smart Chain Testnet (ChainID: 97)
+Token Name: NODRA Network
+Token Symbol: NODRA
+Total Supply: 1,000,000,000 NODRA
+Decimals: 18
+Date Deployed: May 23, 2026
 ```
 
-View on BSCScan Testnet: https://testnet.bscscan.com/token/[ADDRESS]
+✅ **View on BSCScan Testnet:** https://testnet.bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46
 
 ---
 
