@@ -47,6 +47,8 @@ a {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: rgba(15, 15, 15, 0.95);
     backdrop-filter: blur(10px);
@@ -56,18 +58,26 @@ a {
 }
 
 .navbar-container {
-    max-width: 1200px;
+    width: min(100% - 32px, 1180px);
     margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.logo h1 {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
 }
 
 .logo-text {
@@ -80,12 +90,14 @@ a {
 .logo-subtitle {
     font-size: 0.7rem;
     color: #888;
-    margin-left: 0.3rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 .nav-links {
     display: flex;
     gap: 2.5rem;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -93,6 +105,7 @@ a {
     color: #e0e0e0;
     transition: color 0.3s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-link::after {
@@ -114,15 +127,85 @@ a {
     color: #00ffff;
 }
 
+/* Tablet (768px and below) */
 @media (max-width: 768px) {
-    .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
+    .navbar {
+        padding: 1.2rem 0;
     }
+
     .navbar-container {
-        padding: 0 1rem;
+        width: min(100% - 24px, 100%);
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
     }
 }
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-container {
+        width: min(100% - 20px, 100%);
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        order: 1;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.6rem;
+    }
+
+    .nav-links {
+        order: 2;
+        width: 100%;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+        border-color: rgba(0, 255, 255, 0.5);
+        background: rgba(0, 255, 255, 0.05);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
 
 
 /* HERO SECTION */
