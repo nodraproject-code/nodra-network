@@ -6,10 +6,10 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 /**
  * @title NODRA Network Token
  * @dev NODRA Token - ERC20 implementation for NODRA Network
- * 
+ *
  * Total Supply: 1,000,000,000 NODRA tokens
  * Decimals: 18
- * 
+ *
  * This is a simple ERC20 token with no additional features.
  * No minting, no burning, no taxes, no blacklist, no pauses.
  * All tokens are minted to deployer at contract creation.

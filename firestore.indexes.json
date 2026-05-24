@@ -1,19 +1,16 @@
 {
-  "indexes": [
-    {
-      "collectionGroup": "users",
-      "queryScope": "Collection",
-      "fields": [
-        {
-          "fieldPath": "createdAt",
-          "order": "DESCENDING"
-        },
-        {
-          "fieldPath": "__name__",
-          "order": "DESCENDING"
-        }
-      ]
-    }
-  ],
-  "fieldOverrides": []
+    "indexes": [{
+        "collectionGroup": "users",
+        "queryScope": "Collection",
+        "fields": [{
+                "fieldPath": "createdAt",
+                "order": "DESCENDING"
+            },
+            {
+                "fieldPath": "__name__",
+                "order": "DESCENDING"
+            }
+        ]
+    }],
+    "fieldOverrides": []
 }
