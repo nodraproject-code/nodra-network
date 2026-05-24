@@ -13,6 +13,7 @@
             <a href="#" (click)="scrollTo('problem')" class="nav-link">Problem</a>
             <a href="#" (click)="scrollTo('idea')" class="nav-link">Idea</a>
             <a href="#" (click)="scrollTo('roadmap')" class="nav-link">Roadmap</a>
+            <a href="#" (click)="scrollTo('community')" class="nav-link">Community</a>
             <a href="#" (click)="scrollTo('documentation')" class="nav-link">Docs</a>
         </div>
     </div>
@@ -109,7 +110,7 @@
 
         <div class="hero-buttons">
             <button class="btn btn-primary" (click)="scrollTo('about')">Explore the Vision</button>
-            <button class="btn btn-secondary" (click)="openLink('https://t.me')">Join Community</button>
+            <button class="btn btn-secondary" (click)="scrollTo('community')">Join Community</button>
         </div>
     </div>
 </section>
@@ -459,6 +460,88 @@
     </div>
 </section>
 
+<!-- COMMUNITY SECTION -->
+<section id="community" class="community-section">
+    <div class="section-content">
+        <h2>Join the Community</h2>
+        <p class="section-subtitle">Follow the official NODRA channels and be part of the early Phase 2 community</p>
+
+        <div class="community-intro">
+            <p>
+                NODRA Network is building its early public community around <strong>Human Signal</strong>, <strong>AI-era validation</strong>, <strong>open documentation</strong> and <strong>transparent technical progress</strong>.
+            </p>
+        </div>
+
+        <!-- Community Channels Grid -->
+        <div class="community-grid">
+            <!-- X / Twitter -->
+            <div class="community-card">
+                <div class="channel-icon">𝕏</div>
+                <h3>X / Twitter</h3>
+                <p>Latest updates and announcements</p>
+                <a href="#" (click)="openLink('https://x.com/NODRAnetwork')" target="_blank" rel="noopener noreferrer" class="channel-button">Follow</a>
+            </div>
+
+            <!-- Telegram -->
+            <div class="community-card">
+                <div class="channel-icon">✈️</div>
+                <h3>Telegram</h3>
+                <p>Real-time community discussion</p>
+                <a href="#" (click)="openLink('https://t.me/nodranetwors')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+            </div>
+
+            <!-- Reddit -->
+            <div class="community-card">
+                <div class="channel-icon">🔴</div>
+                <h3>Reddit</h3>
+                <p>In-depth discussions and feedback</p>
+                <a href="#" (click)="openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+            </div>
+
+            <!-- Discord -->
+            <div class="community-card">
+                <div class="channel-icon">🎮</div>
+                <h3>Discord</h3>
+                <p>Community coordination and events</p>
+                <a href="#" (click)="openLink('https://discord.gg/pPj2G3D5Z')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="community-card">
+                <div class="channel-icon">📷</div>
+                <h3>Instagram</h3>
+                <p>Visual updates and milestones</p>
+                <a href="#" (click)="openLink('https://www.instagram.com/noraproject/')" target="_blank" rel="noopener noreferrer" class="channel-button">Follow</a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="community-card">
+                <div class="channel-icon">🐱</div>
+                <h3>GitHub</h3>
+                <p>Open source code and contribution</p>
+                <a href="#" (click)="openLink('https://github.com/nodraproject-code/nodra-network')" target="_blank" rel="noopener noreferrer" class="channel-button">Explore</a>
+            </div>
+        </div>
+
+        <!-- Community Important Notice -->
+        <div class="community-notice">
+            <h4>📢 Important</h4>
+            <p>
+                <strong>NODRA Network has an official mainnet contract deployed,</strong> but there is <strong>no presale</strong>, <strong>no airdrop</strong>, <strong>no DEX liquidity</strong>, <strong>no exchange listing</strong> and <strong>trading is not active</strong> at this stage.
+            </p>
+            <p>
+                We are building in the open with transparent communication. All community members are welcome to participate in discussions, contribute to documentation, and help shape the direction of NODRA Network.
+            </p>
+        </div>
+
+        <!-- Email CTA -->
+        <div class="community-email">
+            <p>Have questions or want to reach us directly?</p>
+            <a href="mailto:nodraproject@gmail.com" class="email-link">Contact us at nodraproject (at) gmail.com</a>
+        </div>
+    </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-content">
@@ -473,6 +556,7 @@
                 <a href="#" class="social-link" (click)="openLink('https://t.me/nodranetwors')">Telegram</a>
                 <a href="#" class="social-link" (click)="openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')">Reddit</a>
                 <a href="#" class="social-link" (click)="openLink('https://discord.gg/pPj2G3D5Z')">Discord</a>
+                <a href="#" class="social-link" (click)="openLink('https://www.instagram.com/noraproject/')">Instagram</a>
             </div>
         </div>
         <div class="footer-section">
