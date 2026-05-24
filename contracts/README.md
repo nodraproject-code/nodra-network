@@ -302,7 +302,7 @@ npm run compile
 - **GitHub:** https://github.com/nodra-network
 - **Discord:** https://discord.gg/pPj2G3D5Z
 - **X/Twitter:** https://x.com/NODRAnetwork
-- **Telegram:** https://t.me/nodranetwors
+- **Telegram:** https://t.me/nodranetwork
 
 ### Resources
 

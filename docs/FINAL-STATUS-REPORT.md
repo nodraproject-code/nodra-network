@@ -188,7 +188,7 @@ nodra-network/
 | Platform | Link | Status |
 |----------|------|--------|
 | **X/Twitter** | https://x.com/NODRAnetwork | ✅ Live |
-| **Telegram** | https://t.me/nodranetwors | ✅ Live |
+| **Telegram** | https://t.me/nodranetwork | ✅ Live |
 | **Reddit** | https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm | ✅ Live |
 | **Discord** | https://discord.gg/pPj2G3D5Z | ✅ Live |
 | **Email** | nodraproject@gmail.com | ✅ Live |

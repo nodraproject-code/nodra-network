@@ -350,7 +350,7 @@ The NODRA Token project has successfully completed Phase 1:
 
 - **Discord:** https://discord.gg/pPj2G3D5Z
 - **X/Twitter:** https://x.com/NODRAnetwork
-- **Telegram:** https://t.me/nodranetwors
+- **Telegram:** https://t.me/nodranetwork
 - **Email:** nodraproject@gmail.com
 
 ### Technical Resources

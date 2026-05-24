@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Fondo degradado oscuro -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a2e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo principal -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decoración de red - nodos en esquinas -->
+  <circle cx="50" cy="50" r="8" fill="#00ffff" filter="url(#glow)"/>
+  <circle cx="1150" cy="50" r="8" fill="#00ff41" filter="url(#glow)"/>
+  <circle cx="50" cy="580" r="8" fill="#00ff41" filter="url(#glow)"/>
+  <circle cx="1150" cy="580" r="8" fill="#00ffff" filter="url(#glow)"/>
+
+  <!-- Líneas conectando nodos -->
+  <line x1="50" y1="50" x2="1150" y2="50" stroke="#00ffff" stroke-width="2" opacity="0.6"/>
+  <line x1="50" y1="580" x2="1150" y2="580" stroke="#00ff41" stroke-width="2" opacity="0.6"/>
+  <line x1="50" y1="50" x2="50" y2="580" stroke="#00ffff" stroke-width="2" opacity="0.6"/>
+  <line x1="1150" y1="50" x2="1150" y2="580" stroke="#00ff41" stroke-width="2" opacity="0.6"/>
+
+  <!-- Título principal - NODRA -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="110" font-weight="bold" text-anchor="middle" fill="#00ffff" filter="url(#glow)">
+    NODRA
+  </text>
+
+  <!-- Subtítulo - Network -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="60" text-anchor="middle" fill="#00ff41" filter="url(#glow)">
+    Network
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="45" text-anchor="middle" fill="#e0e0e0">
+    Human Signal for the AI Era
+  </text>
+
+  <!-- Línea decorativa bajo tagline -->
+  <line x1="350" y1="475" x2="850" y2="475" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+</svg>
