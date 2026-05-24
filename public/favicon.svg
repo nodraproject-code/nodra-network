@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+      .nodra-glow {
+        animation: pulse 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" fill="#0f0f0f"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00dd00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Central circle with cyan gradient -->
+  <circle cx="128" cy="128" r="45" fill="url(#cyanGradient)" class="nodra-glow"/>
+  
+  <!-- Inner circle for contrast -->
+  <circle cx="128" cy="128" r="35" fill="#0f0f0f"/>
+  
+  <!-- Network nodes (4 corners) -->
+  <circle cx="50" cy="50" r="8" fill="url(#cyanGradient)"/>
+  <circle cx="206" cy="50" r="8" fill="url(#greenGradient)"/>
+  <circle cx="50" cy="206" r="8" fill="url(#greenGradient)"/>
+  <circle cx="206" cy="206" r="8" fill="url(#cyanGradient)"/>
+  
+  <!-- Connection lines -->
+  <line x1="50" y1="50" x2="128" y2="128" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="206" y1="50" x2="128" y2="128" stroke="url(#greenGradient)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="206" x2="128" y2="128" stroke="url(#greenGradient)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="206" y1="206" x2="128" y2="128" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Central "N" letter for NODRA -->
+  <text x="128" y="140" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="url(#cyanGradient)">N</text>
+</svg>
