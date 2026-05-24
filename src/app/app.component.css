@@ -1465,6 +1465,107 @@ section {
 }
 
 
+/* FOUNDER SECTION */
+
+.founder-section {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.founder-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(135deg, #00ffff, #00ff41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.founder-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 65, 0.03) 100%);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+}
+
+.founder-card:hover {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 65, 0.05) 100%);
+    border-color: rgba(0, 255, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+}
+
+.founder-info h3 {
+    font-size: 1.8rem;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.founder-role {
+    font-size: 1.1rem;
+    color: #00ffff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.founder-bio {
+    font-size: 1rem;
+    color: #d0d0d0;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.founder-bio strong {
+    color: #00ff41;
+    font-weight: 600;
+}
+
+.founder-bio:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .founder-card {
+        padding: 2rem;
+    }
+    
+    .founder-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .founder-bio {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .founder-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .founder-card {
+        padding: 1.5rem;
+    }
+    
+    .founder-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .founder-role {
+        font-size: 0.95rem;
+    }
+    
+    .founder-bio {
+        font-size: 0.9rem;
+    }
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -1539,6 +1640,24 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 0.9rem;
     color: #666;
+}
+
+.footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footer-bottom-content p {
+    margin: 0;
+    color: #666;
+}
+
+.founder-credit {
+    color: #888 !important;
+    font-size: 0.85rem;
+    font-style: italic;
 }
 
 
