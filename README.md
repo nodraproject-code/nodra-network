@@ -19,6 +19,37 @@ This is **not** a financial investment opportunity. This is a conceptual explora
 
 ---
 
+## Official Contract
+
+**NODRA Network has deployed its official token contract on BNB Smart Chain Mainnet.**
+
+### Mainnet Contract Details
+
+| Property | Value |
+|----------|-------|
+| **Token Name** | NODRA Network |
+| **Token Symbol** | NODRA |
+| **Network** | BNB Smart Chain Mainnet (ChainID: 56) |
+| **Contract Address** | `0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46` |
+| **Total Supply** | 1,000,000,000 NODRA |
+| **Decimals** | 18 |
+| **Standard** | ERC20 (OpenZeppelin) |
+
+**View on BscScan:** https://bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46
+
+### Important Notice
+
+⚠️ **Trading Status:**
+- **Presale:** No
+- **Airdrop:** No  
+- **DEX Liquidity:** No
+- **Exchange Listing:** No
+- **Trading:** Not active at this stage
+
+The official mainnet contract exists to establish NODRA nomenclature and prepare for future development. All tokens remain with the deployer. No market trading, liquidity, or exchange integration is currently available.
+
+---
+
 ## Quick Start
 
 ### Prerequisites
