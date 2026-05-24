@@ -479,7 +479,7 @@
                 <div class="channel-icon">𝕏</div>
                 <h3>X / Twitter</h3>
                 <p>Latest updates and announcements</p>
-                <a href="#" (click)="openLink('https://x.com/NODRAnetwork')" target="_blank" rel="noopener noreferrer" class="channel-button">Follow</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://x.com/NODRAnetwork')" class="channel-button">Follow</a>
             </div>
 
             <!-- Telegram -->
@@ -487,7 +487,7 @@
                 <div class="channel-icon">✈️</div>
                 <h3>Telegram</h3>
                 <p>Real-time community discussion</p>
-                <a href="#" (click)="openLink('https://t.me/nodranetwork')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://t.me/nodranetwork')" class="channel-button">Join</a>
             </div>
 
             <!-- Reddit -->
@@ -495,7 +495,7 @@
                 <div class="channel-icon">🔴</div>
                 <h3>Reddit</h3>
                 <p>In-depth discussions and feedback</p>
-                <a href="#" (click)="openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')" class="channel-button">Join</a>
             </div>
 
             <!-- Discord -->
@@ -503,7 +503,7 @@
                 <div class="channel-icon">🎮</div>
                 <h3>Discord</h3>
                 <p>Community coordination and events</p>
-                <a href="#" (click)="openLink('https://discord.gg/pPj2G3D5Z')" target="_blank" rel="noopener noreferrer" class="channel-button">Join</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://discord.gg/pPj2G3D5Z')" class="channel-button">Join</a>
             </div>
 
             <!-- Instagram -->
@@ -511,7 +511,7 @@
                 <div class="channel-icon">📷</div>
                 <h3>Instagram</h3>
                 <p>Visual updates and milestones</p>
-                <a href="#" (click)="openLink('https://www.instagram.com/nodraproject/')" target="_blank" rel="noopener noreferrer" class="channel-button">Follow</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://www.instagram.com/nodraproject/')" class="channel-button">Follow</a>
             </div>
 
             <!-- GitHub -->
@@ -519,7 +519,7 @@
                 <div class="channel-icon">🐱</div>
                 <h3>GitHub</h3>
                 <p>Open source code and contribution</p>
-                <a href="#" (click)="openLink('https://github.com/nodraproject-code/nodra-network')" target="_blank" rel="noopener noreferrer" class="channel-button">Explore</a>
+                <a role="button" (click)="$event.preventDefault(); openLink('https://github.com/nodraproject-code/nodra-network')" class="channel-button">Explore</a>
             </div>
         </div>
 
@@ -574,11 +574,11 @@
         <div class="footer-section">
             <h4>Follow Us</h4>
             <div class="social-links">
-                <a href="#" class="social-link" (click)="openLink('https://x.com/NODRAnetwork')">X / Twitter</a>
-                <a href="#" class="social-link" (click)="openLink('https://t.me/nodranetwork')">Telegram</a>
-                <a href="#" class="social-link" (click)="openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')">Reddit</a>
-                <a href="#" class="social-link" (click)="openLink('https://discord.gg/pPj2G3D5Z')">Discord</a>
-                <a href="#" class="social-link" (click)="openLink('https://www.instagram.com/nodraproject/')">Instagram</a>
+                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://x.com/NODRAnetwork')">X / Twitter</a>
+                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://t.me/nodranetwork')">Telegram</a>
+                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')">Reddit</a>
+                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://discord.gg/pPj2G3D5Z')">Discord</a>
+                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://www.instagram.com/nodraproject/')">Instagram</a>
             </div>
         </div>
         <div class="footer-section">
@@ -586,7 +586,7 @@
             <div class="resource-links">
                 <a href="#" class="resource-link">Whitepaper</a>
                 <a href="#" class="resource-link">Documentation</a>
-                <a href="#" class="resource-link" (click)="openLink('mailto:nodraproject@gmail.com')">Contact</a>
+                <a role="button" class="resource-link" (click)="$event.preventDefault(); openLink('mailto:nodraproject@gmail.com')">Contact</a>
             </div>
         </div>
     </div>

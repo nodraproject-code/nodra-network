@@ -1312,6 +1312,9 @@ section {
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: auto;
 }
 
 .channel-button:hover {
@@ -1617,6 +1620,11 @@ section {
     transition: all 0.3s ease;
     padding-left: 1rem;
     position: relative;
+    cursor: pointer;
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
 }
 
 .social-link::before,
@@ -1632,6 +1640,7 @@ section {
 .resource-link:hover {
     color: #00ffff;
     transform: translateX(5px);
+    pointer-events: auto;
 }
 
 .footer-bottom {
