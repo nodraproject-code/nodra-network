@@ -33,13 +33,29 @@ Standard:       OpenZeppelin ERC-20
 Base:           Solidity 0.8.20
 ```
 
-### Initial Distribution
+### Token Distribution Status
 
-- **100% to Deployer Wallet** (1 billion NODRA)
-- **No Presale** - Not conducted
-- **No Airdrop** - Not conducted
-- **No DEX Liquidity** - Not added
-- **No Exchange Listing** - Not listed
+| Access Method | Status | Amount | Details |
+|---------------|--------|--------|---------|
+| **Treasury Allocation** | ✅ Active | 10,000,001 NODRA | For early supporters & governance |
+| **PancakeSwap V2** | ✅ Active | 100,000 NODRA | Experimental liquidity pool (testing) |
+| **Presale** | ❌ No | — | Not conducted |
+| **Airdrop** | ❌ No | — | Not conducted |
+| **Circulation Reserve** | ✅ Allocated | 889,899,999 NODRA | Distributed to early supporters |
+| **CEX Listing** | ❌ No | — | Not listed yet |
+
+### Liquidity Status
+
+**✅ Limited experimental PancakeSwap V2 liquidity is ACTIVE**
+
+**Pair Details:**
+- **DEX:** PancakeSwap V2
+- **Pair Address:** `0x606B41c09259921281184715434E24CAD0394820` (NODRA/BNB)
+- **Liquidity:** ~100,000 NODRA + 0.04 BNB (estimated)
+- **Status:** Experimental testing phase (NOT production-ready)
+- **Risks:** ⚠️ HIGH slippage due to limited liquidity
+
+See [NODRA Liquidity Policy](./NODRA-LIQUIDITY-POLICY.md) for complete details and warnings.
 
 ---
 
@@ -84,15 +100,16 @@ Base:           Solidity 0.8.20
 - No mainnet contract address yet
 - No mainnet deployment date
 
-❌ **Liquidity**
-- No DEX liquidity pools
-- No market trading pairs
-- No token market
+✅ **Liquidity**
+- PancakeSwap V2 pair active (experimental testing phase)
+- Limited experimental trading available
+- High slippage due to limited liquidity
+- Not production-ready
 
 ❌ **Exchange Listing**
-- Not listed on any DEX
-- Not listed on CEX
-- No trading available
+- Not listed on any DEX token lists
+- Not listed on any CEX
+- No major exchange integration yet
 
 ❌ **Wallet Integration**
 - No Web3 wallet connected

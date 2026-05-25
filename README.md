@@ -42,11 +42,11 @@ This is **not** a financial investment opportunity. This is a conceptual explora
 ⚠️ **Trading Status:**
 - **Presale:** No
 - **Airdrop:** No  
-- **DEX Liquidity:** No
+- **DEX Liquidity:** ✅ Limited experimental PancakeSwap V2 (testing phase)
 - **Exchange Listing:** No
-- **Trading:** Not active at this stage
+- **Trading:** Experimental testing phase active
 
-The official mainnet contract exists to establish NODRA nomenclature and prepare for future development. All tokens remain with the deployer. No market trading, liquidity, or exchange integration is currently available.
+**Limited experimental PancakeSwap V2 liquidity is now active** for testing and verification purposes. This is NOT production-ready liquidity. See [Liquidity Policy](./docs/NODRA-LIQUIDITY-POLICY.md) for risks and details.
 
 ---
 
@@ -162,25 +162,34 @@ NODRA Network maintains separate wallets for transparency and governance clarity
 ```
 0x42eA5759948C93BEC569d6a283a349e023f4fE6E
 ```
-- Purpose: Reserved for future liquidity exploration
-- Status: Not active at this stage
+- Current balance: 100,000 NODRA
+- Purpose: PancakeSwap V2 experimental liquidity
 
-### Current Status
+### Current Liquidity Status
 
-✅ No active PancakeSwap pool  
-✅ No DEX liquidity  
-✅ Trading is not officially active at this stage  
+✅ **Limited experimental PancakeSwap V2 liquidity is ACTIVE**
+
+**PancakeSwap V2 Details:**
+- **Pair Address:** `0x606B41c09259921281184715434E24CAD0394820` (NODRA/BNB)
+- **Liquidity Amount:** ~100,000 NODRA + 0.04 BNB (estimated)
+- **Add Liquidity Tx:** `0x6f7dff8a4a2e751cedfcf237d03b0f02f23c6459917272209a8bc51b4c536e70`
+- **Status:** Experimental testing phase (NOT production-ready)
+- **Slippage Warning:** ⚠️ HIGH — Limited liquidity means significant slippage
+- **Trading:** Available on PancakeSwap, but use with extreme caution
+
+**Important:** This is experimental liquidity for testing ONLY. Not a financial product or investment opportunity. See [Liquidity Policy](./docs/NODRA-LIQUIDITY-POLICY.md) for complete risk disclosures.
 
 ### Access Policies
 
 NODRA Network defines transparent access and liquidity policies:
 
 - **Early Support Allocation:** Direct, documented support path for collaborators and supporters
-- **PancakeSwap Liquidity Pilot:** Potential future pilot, currently under review
+- **PancakeSwap V2 Liquidity Pilot:** Limited experimental pilot now active (testing phase)
 
 **See:**
 - `docs/NODRA-ACCESS-POLICY.md` — Complete access policy and Early Support details
-- `docs/NODRA-LIQUIDITY-POLICY.md` — Liquidity policy and future pilot plans
+- `docs/NODRA-LIQUIDITY-POLICY.md` — Liquidity policy, experimental pilot details, and risk warnings
+- `docs/NODRA-TOKEN-PROFILE.md` — Complete token information for exchanges/lists
 
 ---
 
