@@ -34,8 +34,15 @@ This is **not** a financial investment opportunity. This is a conceptual explora
 | **Total Supply** | 1,000,000,000 NODRA |
 | **Decimals** | 18 |
 | **Standard** | ERC20 (OpenZeppelin) |
+| **Verification Status** | ✅ **Verified on BscScan** |
 
 **View on BscScan:** https://bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46
+
+**Verification Details:**
+- Compiler: Solidity 0.8.20
+- Optimization: Enabled (200 runs)
+- Source Code: Available for inspection
+- See [Verification Report](./docs/VERIFICATION-REPORT.md) for full details
 
 ### Important Notice
 
