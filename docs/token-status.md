@@ -297,6 +297,65 @@ Note:                     Testnet tokens have NO market value
 ### ⏳ Phase 3 — Token Utilities (Future)
 
 1. ⏳ Staking mechanism (if planned)
+
+---
+
+## Treasury, Liquidity & Access Structure
+
+### Official Wallets
+
+**Founder / Deployer Wallet:**
+```
+0x3550b4E95636e41B5FBbE13F300868144D30E4bA
+```
+- Purpose: Original contract deployment, main supply holder
+- Status: Not intended for frequent operational activity
+
+**NODRA Treasury Wallet:**
+```
+0x16b27c6fCC8fd44Ff3E202fFDCFa078727F39Fb3
+```
+- Purpose: Early Support Allocation management
+- Current balance: 10,000,001 NODRA
+- Status: Holding reserved tokens
+
+**NODRA Liquidity Wallet:**
+```
+0x42eA5759948C93BEC569d6a283a349e023f4fE6E
+```
+- Purpose: Reserved for future PancakeSwap Liquidity Pilot
+- Status: Not active at this stage
+
+### Current Access Status
+
+| Access Method | Status | Details |
+|-------------|--------|---------|
+| Early Support Allocation | 📋 Policy Draft | Direct, documented support path |
+| PancakeSwap Liquidity Pilot | ⏳ Not Active | Potential future pilot, under review |
+| Public Presale | ❌ Not Available | No public presale |
+| Airdrop | ❌ Not Available | No airdrop program |
+| DEX Liquidity | ❌ Not Active | No active PancakeSwap pool |
+| Exchange Listing | ❌ Not Listed | No exchange listings |
+
+### Current Trading Status
+
+✅ **Official contract deployed and live on mainnet**  
+❌ **Trading is not officially active at this stage**  
+❌ **No active market or liquidity**  
+❌ **No guaranteed value or return**
+
+### Documentation
+
+For detailed policies and transparency information, see:
+
+- **Access Policy:** `docs/NODRA-ACCESS-POLICY.md`
+- **Liquidity Policy:** `docs/NODRA-LIQUIDITY-POLICY.md`
+
+Both documents explain:
+- Early Support Allocation mechanism
+- Potential future PancakeSwap Liquidity Pilot
+- Risk notices and transparency commitment
+- No investment offer or financial guarantee
 2. ⏳ Reward system (if planned)
 3. ⏳ Community governance (if planned)
 4. ⏳ Ecosystem integration (if planned)

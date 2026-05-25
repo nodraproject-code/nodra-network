@@ -142,6 +142,48 @@ nodra/
 
 ---
 
+## Treasury & Liquidity Transparency
+
+NODRA Network maintains separate wallets for transparency and governance clarity:
+
+**Founder / Deployer Wallet:**
+```
+0x3550b4E95636e41B5FBbE13F300868144D30E4bA
+```
+
+**NODRA Treasury Wallet:**
+```
+0x16b27c6fCC8fd44Ff3E202fFDCFa078727F39Fb3
+```
+- Current balance: 10,000,001 NODRA
+- Purpose: Early Support Allocation
+
+**NODRA Liquidity Wallet:**
+```
+0x42eA5759948C93BEC569d6a283a349e023f4fE6E
+```
+- Purpose: Reserved for future liquidity exploration
+- Status: Not active at this stage
+
+### Current Status
+
+✅ No active PancakeSwap pool  
+✅ No DEX liquidity  
+✅ Trading is not officially active at this stage  
+
+### Access Policies
+
+NODRA Network defines transparent access and liquidity policies:
+
+- **Early Support Allocation:** Direct, documented support path for collaborators and supporters
+- **PancakeSwap Liquidity Pilot:** Potential future pilot, currently under review
+
+**See:**
+- `docs/NODRA-ACCESS-POLICY.md` — Complete access policy and Early Support details
+- `docs/NODRA-LIQUIDITY-POLICY.md` — Liquidity policy and future pilot plans
+
+---
+
 ## Documentation
 
 For detailed information, see the `/docs` folder:

@@ -989,6 +989,64 @@ section {
     margin-bottom: 0;
 }
 
+.contract-transparency {
+    background: rgba(0, 255, 255, 0.05);
+    border-left: 3px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2.5rem;
+}
+
+.contract-transparency h4 {
+    font-size: 1.1rem;
+    color: #00ffff;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.contract-transparency p {
+    font-size: 0.95rem;
+    color: #c0c0c0;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.transparency-wallets {
+    background: rgba(0, 20, 30, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.wallet-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.wallet-item:last-child {
+    margin-bottom: 0;
+}
+
+.wallet-label {
+    font-size: 0.85rem;
+    color: #00ffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.wallet-item code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #00ff41;
+    background: rgba(0, 50, 50, 0.5);
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    word-break: break-all;
+}
+
 .contract-links {
     display: flex;
     gap: 1.5rem;
