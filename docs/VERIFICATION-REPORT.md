@@ -132,10 +132,12 @@ etherscan: {
 ### API Key Requirement
 
 ✅ **BSCSCAN_API_KEY** environment variable:
-- Must be set in `.env` file
-- Must be a valid Etherscan API V2 key from https://etherscan.io
+- **Status**: ✅ Updated (May 25, 2026)
+- **Source**: Etherscan API V2 (https://etherscan.io)
+- **Format**: Valid Etherscan API V2 key
 - ⚠️ **DO NOT commit** `.env` to version control
 - ✅ `.env` is in `.gitignore`
+- ✅ Key is securely managed in local environment
 
 ---
 
