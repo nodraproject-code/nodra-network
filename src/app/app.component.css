@@ -127,59 +127,53 @@ a {
     color: #00ffff;
 }
 
+
 /* Tablet (768px and below) */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 1.2rem 0;
     }
-
     .navbar-container {
         width: min(100% - 24px, 100%);
     }
-
     .logo h1 {
         font-size: 1.3rem;
     }
-
     .logo-subtitle {
         font-size: 0.65rem;
     }
-
     .nav-links {
         gap: 1.5rem;
         font-size: 0.85rem;
     }
-
     .nav-link {
         font-size: 0.85rem;
     }
 }
 
+
 /* Mobile (480px and below) */
+
 @media (max-width: 480px) {
     .navbar {
         padding: 1rem 0;
     }
-
     .navbar-container {
         width: min(100% - 20px, 100%);
         flex-wrap: wrap;
     }
-
     .logo {
         order: 1;
         width: 100%;
         margin-bottom: 0.8rem;
     }
-
     .logo h1 {
         font-size: 1.1rem;
     }
-
     .logo-subtitle {
         font-size: 0.6rem;
     }
-
     .nav-links {
         order: 2;
         width: 100%;
@@ -187,7 +181,6 @@ a {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-
     .nav-link {
         font-size: 0.75rem;
         padding: 0.4rem 0.8rem;
@@ -195,17 +188,14 @@ a {
         border-radius: 4px;
         transition: all 0.3s ease;
     }
-
     .nav-link:hover {
         border-color: rgba(0, 255, 255, 0.5);
         background: rgba(0, 255, 255, 0.05);
     }
-
     .nav-link::after {
         display: none;
     }
 }
-
 
 
 /* HERO SECTION */
@@ -888,7 +878,7 @@ section {
     letter-spacing: 1px;
 }
 
-.contract-info > p {
+.contract-info>p {
     font-size: 1.05rem;
     color: #b0b0b0;
     margin-bottom: 2.5rem;
@@ -1030,25 +1020,20 @@ section {
     .contract-container {
         padding: 2rem;
     }
-    
     .contract-info h3 {
         font-size: 1.5rem;
     }
-    
     .detail-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
-    
     .detail-value {
         text-align: left;
     }
-    
     .contract-links {
         flex-direction: column;
     }
-    
     .contract-link {
         width: 100%;
         text-align: center;
@@ -1059,16 +1044,13 @@ section {
     .contract-container {
         padding: 1.5rem;
     }
-    
     .contract-info h3 {
         font-size: 1.3rem;
     }
-    
     .address-code {
         padding: 1rem;
         font-size: 0.8rem;
     }
-    
     .contract-details,
     .contract-address,
     .contract-status {
@@ -1400,20 +1382,16 @@ section {
     .community-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    
     .community-card {
         padding: 2rem;
     }
-    
     .community-intro {
         padding: 1.5rem;
         font-size: 0.95rem;
     }
-    
     .channel-icon {
         font-size: 2rem;
     }
-    
     .community-notice,
     .community-email {
         width: min(100% - 24px, 100%);
@@ -1425,41 +1403,33 @@ section {
     .community-section h2 {
         font-size: 1.8rem;
     }
-    
     .community-section .section-subtitle {
         font-size: 0.95rem;
     }
-    
     .community-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
     .community-card {
         padding: 1.5rem;
     }
-    
     .channel-icon {
         font-size: 2rem;
     }
-    
     .community-intro {
         width: min(100% - 20px, 100%);
         padding: 1.2rem;
         font-size: 0.9rem;
     }
-    
     .community-notice {
         width: min(100% - 20px, 100%);
         padding: 1.2rem;
         font-size: 0.9rem;
     }
-    
     .community-email {
         width: min(100% - 20px, 100%);
         padding: 1.2rem;
     }
-    
     .channel-button,
     .email-link {
         padding: 0.7rem 1.5rem;
@@ -1536,11 +1506,9 @@ section {
     .founder-card {
         padding: 2rem;
     }
-    
     .founder-info h3 {
         font-size: 1.4rem;
     }
-    
     .founder-bio {
         font-size: 0.95rem;
     }
@@ -1550,19 +1518,15 @@ section {
     .founder-section h2 {
         font-size: 1.8rem;
     }
-    
     .founder-card {
         padding: 1.5rem;
     }
-    
     .founder-info h3 {
         font-size: 1.2rem;
     }
-    
     .founder-role {
         font-size: 0.95rem;
     }
-    
     .founder-bio {
         font-size: 0.9rem;
     }
