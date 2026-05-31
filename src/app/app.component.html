@@ -54,8 +54,14 @@
         </div>
 
         <div class="hero-buttons">
-            <button class="btn btn-primary" (click)="scrollTo('about')">Explore the Vision</button>
-            <button class="btn btn-secondary" (click)="scrollTo('community')">Join Community</button>
+            <button class="btn btn-primary" (click)="scrollTo('about')">
+                <span class="text-en">Explore the Vision</span>
+                <span class="text-es">Explorar la Visión</span>
+            </button>
+            <button class="btn btn-secondary" (click)="scrollTo('community')">
+                <span class="text-en">Join Community</span>
+                <span class="text-es">Unirse a la Comunidad</span>
+            </button>
         </div>
     </div>
 </section>
@@ -63,25 +69,19 @@
 <!-- ABOUT SECTION -->
 <section id="about" class="about-section">
     <div class="section-content">
-        <h2>What is NODRA?</h2>
+        <h2 class="text-en">What is NODRA?</h2>
+        <h2 class="text-es">¿Qué es NODRA?</h2>
 
-        <div class="about-grid">
+        <div class="about-single">
             <div class="about-card">
-                <h3>🌍 English</h3>
-                <p>
-                    NODRA Network is a framework for capturing, valuing, and potentially rewarding human signal in an age of artificial intelligence. We believe meaningful human contributions—expertise, insights, verification, and participation—have intrinsic value that
-                    should be recognized and organized in a decentralized context.
+                <p class="text-en">
+                    NODRA Network is a framework for capturing, valuing, and potentially rewarding human signal in an age of artificial intelligence. We believe meaningful human contributions—expertise, insights, verification, and participation—have intrinsic value that should be recognized and organized in a decentralized context.
                 </p>
-                <p class="card-note">This is not a financial investment opportunity.</p>
-            </div>
-
-            <div class="about-card">
-                <h3>🌎 Español</h3>
-                <p>
-                    NODRA Network es un marco para capturar, valorar y potencialmente recompensar la señal humana en una era de inteligencia artificial. Creemos que las contribuciones humanas significativas—experiencia, perspectivas, verificación y participación—tienen valor
-                    intrínseco que debe ser reconocido y organizado de manera descentralizada.
+                <p class="text-es">
+                    NODRA Network es un marco para capturar, valorar y potencialmente recompensar la señal humana en una era de inteligencia artificial. Creemos que las contribuciones humanas significativas—experiencia, perspectivas, verificación y participación—tienen valor intrínseco que debe ser reconocido y organizado de manera descentralizada.
                 </p>
-                <p class="card-note">Esta no es una oportunidad de inversión financiera.</p>
+                <p class="card-note text-en">This is not a financial investment opportunity.</p>
+                <p class="card-note text-es">Esta no es una oportunidad de inversión financiera.</p>
             </div>
         </div>
     </div>
