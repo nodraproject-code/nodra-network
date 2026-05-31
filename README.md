@@ -244,6 +244,18 @@ NODRA Network is currently in conceptual phase. For inquiries or contributions, 
 
 ---
 
+## Collaboration
+
+NODRA Network is open to collaboration with researchers, scientific publications, AI communities, education initiatives, digital trust projects and independent contributors interested in **Human Signal for the AI Era**.
+
+Collaboration inquiries are focused on research, documentation, education, community and responsible AI discussion. NODRA does not offer financial products, guaranteed returns or investment opportunities.
+
+**Collaboration inquiries:** contact@nodranetwork.com
+
+**Read more:** [docs/NODRA-COLLABORATION-FRAMEWORK.md](./docs/NODRA-COLLABORATION-FRAMEWORK.md)
+
+---
+
 ## License
 
 [Specify license if applicable]

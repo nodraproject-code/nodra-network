@@ -15,6 +15,13 @@
             <a href="#" (click)="scrollTo('roadmap')" class="nav-link">Roadmap</a>
             <a href="#" (click)="scrollTo('community')" class="nav-link">Community</a>
             <a href="#" (click)="scrollTo('documentation')" class="nav-link">Docs</a>
+            <a href="#" (click)="scrollTo('collaborate')" class="nav-link text-en">Collaborate</a>
+            <a href="#" (click)="scrollTo('collaborate')" class="nav-link text-es">Colaborar</a>
+        </div>
+        <div class="lang-selector">
+            <button class="lang-btn" [class.lang-active]="currentLang === 'en'" (click)="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" [class.lang-active]="currentLang === 'es'" (click)="setLang('es')">ES</button>
         </div>
     </div>
 </nav>
@@ -507,6 +514,137 @@
                 </p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- COLLABORATE SECTION -->
+<section id="collaborate" class="collaborate-section">
+    <div class="section-content">
+
+        <h2 class="text-en">Collaborate with NODRA Network</h2>
+        <h2 class="text-es">Colabora con NODRA Network</h2>
+        <p class="section-subtitle text-en">Human Signal for the AI Era requires serious discussion, research, validation and real-world collaboration.</p>
+        <p class="section-subtitle text-es">Human Signal for the AI Era requiere conversación seria, investigación, validación y colaboración real.</p>
+
+        <div class="collaborate-intro">
+            <p class="text-en">NODRA Network is open to conversations with researchers, AI communities, scientific publications, educational initiatives, digital trust projects, institutions and independent contributors interested in the role of human validation in the age of artificial intelligence.</p>
+            <p class="text-en">Our focus is not financial speculation. Our focus is to explore how human contribution, experience, judgment and expertise can become a recognized layer of value in a world increasingly shaped by AI-generated content and automated reasoning.</p>
+            <p class="text-es">NODRA Network está abierto a conversaciones con investigadores, comunidades de inteligencia artificial, publicaciones científicas, iniciativas educativas, proyectos de confianza digital, instituciones y colaboradores independientes interesados en el rol de la validación humana en la era de la inteligencia artificial.</p>
+            <p class="text-es">Nuestro enfoque no es la especulación financiera. Nuestro enfoque es explorar cómo la contribución humana, la experiencia, el criterio y el conocimiento experto pueden convertirse en una capa reconocida de valor en un mundo cada vez más influenciado por contenido generado por IA y razonamiento automatizado.</p>
+        </div>
+
+        <!-- Collaboration Cards -->
+        <div class="collab-cards">
+            <div class="collab-card">
+                <div class="collab-card-icon">🔬</div>
+                <h3 class="text-en">Research &amp; Discussion</h3>
+                <h3 class="text-es">Investigación y Conversación</h3>
+                <p class="text-en">Explore the role of human judgment, lived experience and expert validation in AI-assisted knowledge systems.</p>
+                <p class="text-es">Explorar el rol del criterio humano, la experiencia vivida y la validación experta en sistemas de conocimiento asistidos por IA.</p>
+            </div>
+            <div class="collab-card">
+                <div class="collab-card-icon">📰</div>
+                <h3 class="text-en">Scientific &amp; Editorial Collaboration</h3>
+                <h3 class="text-es">Colaboración Científica y Editorial</h3>
+                <p class="text-en">Collaborate around human-authored content, editorial validation, knowledge quality and responsible AI communication.</p>
+                <p class="text-es">Colaborar en torno a contenido creado por humanos, validación editorial, calidad del conocimiento y comunicación responsable sobre IA.</p>
+            </div>
+            <div class="collab-card">
+                <div class="collab-card-icon">🤝</div>
+                <h3 class="text-en">Community Contribution</h3>
+                <h3 class="text-es">Contribución Comunitaria</h3>
+                <p class="text-en">Help translate, review, document and discuss the Human Signal framework through open and transparent participation.</p>
+                <p class="text-es">Ayudar a traducir, revisar, documentar y discutir el marco Human Signal mediante participación abierta y transparente.</p>
+            </div>
+            <div class="collab-card">
+                <div class="collab-card-icon">🧪</div>
+                <h3 class="text-en">Pilot Concepts</h3>
+                <h3 class="text-es">Conceptos Piloto</h3>
+                <p class="text-en">Explore early pilots for human validation, contribution tracking, trust signals and AI-era knowledge frameworks.</p>
+                <p class="text-es">Explorar pilotos iniciales para validación humana, trazabilidad de contribuciones, señales de confianza y marcos de conocimiento para la era de la IA.</p>
+            </div>
+        </div>
+
+        <!-- Who We Want to Collaborate With -->
+        <div class="collab-two-col">
+            <div class="collab-list-block">
+                <h3 class="text-en">Who We Want to Collaborate With</h3>
+                <h3 class="text-es">Con Quiénes Queremos Colaborar</h3>
+                <ul class="collab-list text-en">
+                    <li>AI researchers and ethics communities</li>
+                    <li>Scientific magazines and editorial platforms</li>
+                    <li>Universities and academic groups</li>
+                    <li>Digital trust and Web3 communities</li>
+                    <li>Independent researchers and writers</li>
+                    <li>Human knowledge and education projects</li>
+                    <li>Technology media and science communicators</li>
+                    <li>Organizations exploring responsible AI</li>
+                </ul>
+                <ul class="collab-list text-es">
+                    <li>Investigadores de IA y comunidades de ética tecnológica</li>
+                    <li>Revistas científicas y plataformas editoriales</li>
+                    <li>Universidades y grupos académicos</li>
+                    <li>Comunidades de confianza digital y Web3</li>
+                    <li>Investigadores y escritores independientes</li>
+                    <li>Proyectos de conocimiento humano y educación</li>
+                    <li>Medios tecnológicos y divulgadores científicos</li>
+                    <li>Organizaciones que exploran IA responsable</li>
+                </ul>
+            </div>
+            <div class="collab-list-block">
+                <h3 class="text-en">What NODRA Is Looking For</h3>
+                <h3 class="text-es">Qué Busca NODRA</h3>
+                <p class="collab-looking-intro text-en">NODRA is currently looking for serious conversations, feedback and early collaboration around:</p>
+                <p class="collab-looking-intro text-es">Actualmente NODRA busca conversaciones serias, retroalimentación y colaboración inicial en torno a:</p>
+                <ul class="collab-list text-en">
+                    <li>Human validation in AI-generated environments</li>
+                    <li>Human-authored knowledge and editorial trust</li>
+                    <li>Contribution frameworks</li>
+                    <li>Community-based knowledge review</li>
+                    <li>Responsible AI communication</li>
+                    <li>Digital trust infrastructure</li>
+                    <li>Ethical use of blockchain for transparency</li>
+                    <li>Non-financial participation models</li>
+                </ul>
+                <ul class="collab-list text-es">
+                    <li>Validación humana en entornos generados por IA</li>
+                    <li>Conocimiento creado por humanos y confianza editorial</li>
+                    <li>Marcos de contribución</li>
+                    <li>Revisión comunitaria del conocimiento</li>
+                    <li>Comunicación responsable sobre IA</li>
+                    <li>Infraestructura de confianza digital</li>
+                    <li>Uso ético de blockchain para transparencia</li>
+                    <li>Modelos de participación no financieros</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="collab-cta">
+            <h3 class="text-en">Start a Collaboration Conversation</h3>
+            <h3 class="text-es">Iniciar una Conversación de Colaboración</h3>
+            <p class="text-en">If you represent a publication, research group, AI community, educational initiative, institution or independent project interested in Human Signal for the AI Era, contact NODRA Network.</p>
+            <p class="text-es">Si representas una publicación, grupo de investigación, comunidad de IA, iniciativa educativa, institución o proyecto independiente interesado en Human Signal for the AI Era, contacta a NODRA Network.</p>
+            <div class="collab-cta-buttons">
+                <a href="mailto:contact@nodranetwork.com?subject=Collaboration%20with%20NODRA%20Network" class="btn btn-primary collab-btn">
+                    <span class="text-en">Contact NODRA</span>
+                    <span class="text-es">Contactar a NODRA</span>
+                </a>
+                <a role="button" class="btn btn-secondary collab-btn" (click)="$event.preventDefault(); openLink('https://github.com/nodraproject-code/nodra-network')">
+                    <span class="text-en">View GitHub</span>
+                    <span class="text-es">Ver GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Important Notice -->
+        <div class="collab-notice">
+            <h4 class="text-en">⚠️ Important Notice</h4>
+            <h4 class="text-es">⚠️ Aviso Importante</h4>
+            <p class="text-en">NODRA Network is an early-stage digital project. Collaboration inquiries are focused on research, documentation, education, community and responsible AI discussion. NODRA does not offer financial advice, guaranteed returns, token appreciation or investment opportunities.</p>
+            <p class="text-es">NODRA Network es un proyecto digital en etapa temprana. Las solicitudes de colaboración están enfocadas en investigación, documentación, educación, comunidad y discusión responsable sobre IA. NODRA no ofrece asesoría financiera, retornos garantizados, valorización del token ni oportunidades de inversión.</p>
+        </div>
+
     </div>
 </section>
 

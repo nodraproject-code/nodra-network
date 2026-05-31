@@ -1775,3 +1775,300 @@ section {
 html {
     scroll-behavior: smooth;
 }
+
+
+/* ============================================================
+   MULTILINGUAL SUPPORT — Language visibility rules
+   ============================================================ */
+
+:host.lang-en .text-es { display: none; }
+:host.lang-es .text-en { display: none; }
+:host.lang-en .desc-es { display: none; }
+:host.lang-es .desc-en { display: none; }
+
+
+/* LANGUAGE SELECTOR */
+
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: 1.5rem;
+    flex-shrink: 0;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    color: #888;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.55rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
+
+.lang-btn:hover {
+    color: #00ffff;
+    border-color: rgba(0, 255, 255, 0.6);
+}
+
+.lang-btn.lang-active {
+    color: #00ffff;
+    border-color: #00ffff;
+    background: rgba(0, 255, 255, 0.08);
+}
+
+.lang-sep {
+    color: #444;
+    font-size: 0.7rem;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .lang-selector {
+        margin-left: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lang-selector {
+        order: 3;
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* ============================================================
+   COLLABORATE SECTION
+   ============================================================ */
+
+.collaborate-section {
+    background: linear-gradient(180deg, #0f0f0f 0%, #111827 50%, #0f0f0f 100%);
+    padding: 6rem 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.07);
+}
+
+.collaborate-section .section-content {
+    width: min(100% - 48px, 1100px);
+    margin: 0 auto;
+}
+
+.collaborate-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #e0e0e0, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.collaborate-section .section-subtitle {
+    text-align: center;
+    color: #00ff41;
+    font-size: 1.05rem;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    opacity: 0.85;
+}
+
+.collaborate-intro {
+    max-width: 820px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.collaborate-intro p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 1rem;
+}
+
+/* Collaboration Cards */
+.collab-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.collab-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.collab-card:hover {
+    border-color: rgba(0, 255, 255, 0.35);
+    transform: translateY(-3px);
+}
+
+.collab-card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.85rem;
+}
+
+.collab-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00ffff;
+    margin-bottom: 0.65rem;
+    line-height: 1.35;
+}
+
+.collab-card p {
+    font-size: 0.9rem;
+    color: #999;
+    line-height: 1.7;
+}
+
+/* Two-column who/looking layout */
+.collab-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.collab-list-block h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+.collab-looking-intro {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.collab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collab-list li {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    padding: 0.45rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.collab-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+    font-weight: 700;
+}
+
+/* CTA block */
+.collab-cta {
+    background: rgba(0, 255, 255, 0.04);
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.collab-cta h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 0.85rem;
+}
+
+.collab-cta p {
+    font-size: 0.95rem;
+    color: #999;
+    max-width: 680px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.75;
+}
+
+.collab-cta-buttons {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collab-btn {
+    min-width: 180px;
+}
+
+/* Important Notice */
+.collab-notice {
+    background: rgba(255, 204, 0, 0.04);
+    border: 1px solid rgba(255, 204, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+}
+
+.collab-notice h4 {
+    font-size: 0.95rem;
+    color: #ffcc00;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.collab-notice p {
+    font-size: 0.88rem;
+    color: #999;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .collab-two-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .collab-cta {
+        padding: 2rem 1.5rem;
+    }
+    .collaborate-section .section-content {
+        width: min(100% - 32px, 100%);
+    }
+}
+
+@media (max-width: 480px) {
+    .collaborate-section {
+        padding: 4rem 0;
+    }
+    .collab-cards {
+        grid-template-columns: 1fr;
+    }
+    .collab-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .collab-btn {
+        min-width: unset;
+        text-align: center;
+    }
+    .collab-notice {
+        padding: 1.25rem;
+    }
+}
