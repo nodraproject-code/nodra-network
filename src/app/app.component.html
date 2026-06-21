@@ -2,467 +2,521 @@
 <!-- Human Signal for the AI Era -->
 
 <!-- NAVIGATION BAR -->
-<nav class="navbar">
+<nav class="navbar" role="navigation" [attr.aria-label]="currentLang === 'en' ? 'Main navigation' : 'Navegación principal'">
     <div class="navbar-container">
         <div class="logo">
-            <h1 class="logo-text">NODRA</h1>
+            <span class="logo-text">NODRA</span>
             <span class="logo-subtitle">Network</span>
         </div>
         <div class="nav-links">
-            <a href="#" (click)="scrollTo('about')" class="nav-link">About</a>
-            <a href="#" (click)="scrollTo('problem')" class="nav-link">Problem</a>
-            <a href="#" (click)="scrollTo('idea')" class="nav-link">Idea</a>
-            <a href="#" (click)="scrollTo('roadmap')" class="nav-link">Roadmap</a>
-            <a href="#" (click)="scrollTo('community')" class="nav-link">Community</a>
-            <a href="#" (click)="scrollTo('documentation')" class="nav-link">Docs</a>
-            <a href="#" (click)="scrollTo('collaborate')" class="nav-link text-en">Collaborate</a>
-            <a href="#" (click)="scrollTo('collaborate')" class="nav-link text-es">Colaborar</a>
+            <a href="#" (click)="scrollTo('vision')" class="nav-link">
+                <span class="text-en">Vision</span>
+                <span class="text-es">Visión</span>
+            </a>
+            <a href="#" (click)="scrollTo('problem')" class="nav-link">
+                <span class="text-en">The Problem</span>
+                <span class="text-es">El Problema</span>
+            </a>
+            <a href="#" (click)="scrollTo('exploring')" class="nav-link">
+                <span class="text-en">Exploring</span>
+                <span class="text-es">Explorando</span>
+            </a>
+            <a href="#" (click)="scrollTo('roadmap')" class="nav-link">
+                <span class="text-en">Roadmap</span>
+                <span class="text-es">Hoja de Ruta</span>
+            </a>
+            <a href="#" (click)="scrollTo('community')" class="nav-link">
+                <span class="text-en">Community</span>
+                <span class="text-es">Comunidad</span>
+            </a>
+            <a href="#" (click)="scrollTo('documentation')" class="nav-link">
+                <span class="text-en">Docs</span>
+                <span class="text-es">Documentos</span>
+            </a>
+            <a href="#" (click)="scrollTo('collaborate')" class="nav-link">
+                <span class="text-en">Collaborate</span>
+                <span class="text-es">Colaborar</span>
+            </a>
         </div>
         <div class="lang-selector">
-            <button class="lang-btn" [class.lang-active]="currentLang === 'en'" (click)="setLang('en')">EN</button>
-            <span class="lang-sep">|</span>
-            <button class="lang-btn" [class.lang-active]="currentLang === 'es'" (click)="setLang('es')">ES</button>
+            <button class="lang-btn" [class.lang-active]="currentLang === 'en'" (click)="setLang('en')" aria-label="Switch to English">EN</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button class="lang-btn" [class.lang-active]="currentLang === 'es'" (click)="setLang('es')" aria-label="Cambiar a español">ES</button>
         </div>
     </div>
 </nav>
 
 <!-- HERO SECTION -->
-<section class="hero-section" id="hero">
-    <!-- Animated background nodes -->
-    <div class="node-1"></div>
-    <div class="node-2"></div>
-    <div class="node-3"></div>
-    <div class="connection"></div>
+<section class="hero-section" id="hero" aria-labelledby="hero-heading">
+    <div class="node-1" aria-hidden="true"></div>
+    <div class="node-2" aria-hidden="true"></div>
+    <div class="node-3" aria-hidden="true"></div>
+    <div class="connection" aria-hidden="true"></div>
 
     <div class="hero-content">
         <div class="phase-badge">
-            <span>Phase 1</span>
-            <span class="phase-dot">●</span>
-            <span>Identity & Vision</span>
+            <span class="text-en">Phase 1</span>
+            <span class="text-es">Fase 1</span>
+            <span class="phase-dot" aria-hidden="true">●</span>
+            <span class="text-en">Foundation</span>
+            <span class="text-es">Fundación</span>
         </div>
 
-        <h2 class="hero-title">NODRA Network</h2>
-        <p class="hero-subtitle">Human Signal for the AI Era</p>
+        <h1 id="hero-heading" class="hero-title">Human Signal<br>for the AI Era</h1>
 
         <div class="hero-description">
-            <p class="desc-en">
-                An independent digital project exploring how human contribution and expertise could become a recognized framework in the age of artificial intelligence.
+            <p class="text-en">
+                As AI generates more content, human experience, judgment and context become more valuable. NODRA is exploring tools that help preserve, validate and recognize the human signal.
             </p>
-            <p class="desc-es">
-                Un proyecto digital independiente que explora cómo la contribución y experiencia humana podrían convertirse en un marco reconocido en la era de la inteligencia artificial.
+            <p class="text-es">
+                A medida que la inteligencia artificial genera más contenido, la experiencia, el criterio y el contexto humano adquieren mayor valor. NODRA explora herramientas que ayuden a preservar, validar y reconocer la señal humana.
             </p>
         </div>
 
         <div class="hero-buttons">
-            <button class="btn btn-primary" (click)="scrollTo('about')">
+            <button class="btn btn-primary" (click)="scrollTo('vision')">
                 <span class="text-en">Explore the Vision</span>
                 <span class="text-es">Explorar la Visión</span>
             </button>
             <button class="btn btn-secondary" (click)="scrollTo('community')">
-                <span class="text-en">Join Community</span>
-                <span class="text-es">Unirse a la Comunidad</span>
+                <span class="text-en">Join the Community</span>
+                <span class="text-es">Únete a la Comunidad</span>
             </button>
         </div>
     </div>
 </section>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="about-section">
+<!-- VISION SECTION -->
+<section id="vision" class="about-section" aria-labelledby="vision-heading">
     <div class="section-content">
-        <h2 class="text-en">What is NODRA?</h2>
+        <h2 id="vision-heading" class="text-en">What is NODRA?</h2>
         <h2 class="text-es">¿Qué es NODRA?</h2>
 
         <div class="about-single">
             <div class="about-card">
                 <p class="text-en">
-                    NODRA Network is a framework for capturing, valuing, and potentially rewarding human signal in an age of artificial intelligence. We believe meaningful human contributions—expertise, insights, verification, and participation—have intrinsic value that should be recognized and organized in a decentralized context.
+                    NODRA Network is an early-stage initiative exploring how human experience, judgment and validated knowledge can be preserved and recognized in a world increasingly shaped by artificial intelligence.
+                </p>
+                <p class="text-en">
+                    We are building a framework where human signal — lived experience, expert judgment, verified contributions — can be identified, trusted and valued alongside AI-generated content.
                 </p>
                 <p class="text-es">
-                    NODRA Network es un marco para capturar, valorar y potencialmente recompensar la señal humana en una era de inteligencia artificial. Creemos que las contribuciones humanas significativas—experiencia, perspectivas, verificación y participación—tienen valor intrínseco que debe ser reconocido y organizado de manera descentralizada.
+                    NODRA Network es una iniciativa en etapa temprana que explora cómo la experiencia humana, el criterio y el conocimiento validado pueden preservarse y reconocerse en un mundo cada vez más influenciado por la inteligencia artificial.
                 </p>
-                <p class="card-note text-en">This is not a financial investment opportunity.</p>
-                <p class="card-note text-es">Esta no es una oportunidad de inversión financiera.</p>
+                <p class="text-es">
+                    Estamos construyendo un marco donde la señal humana — experiencia vivida, criterio experto, contribuciones verificadas — pueda identificarse, ser confiable y valorarse junto al contenido generado por IA.
+                </p>
+                <p class="card-note text-en">NODRA is not a financial product or investment opportunity.</p>
+                <p class="card-note text-es">NODRA no es un producto financiero ni una oportunidad de inversión.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- PROBLEM SECTION -->
-<section id="problem" class="problem-section">
+<section id="problem" class="problem-section" aria-labelledby="problem-heading">
     <div class="section-content">
-        <h2>The Problem</h2>
-        <p class="section-subtitle">Why we're building NODRA</p>
+        <h2 id="problem-heading" class="text-en">The Problem</h2>
+        <h2 class="text-es">El Problema</h2>
+        <p class="section-subtitle text-en">Why human signal matters more than ever</p>
+        <p class="section-subtitle text-es">Por qué la señal humana importa más que nunca</p>
 
         <div class="problem-grid">
             <div class="problem-card">
-                <div class="card-icon">🔐</div>
-                <h3>Centralized Control</h3>
-                <p>
-                    Major platforms control how human signal is valued and rewarded. Contributors have no voice in the rules that govern their participation.
-                </p>
+                <div class="card-icon" aria-hidden="true">🤖</div>
+                <h3 class="text-en">AI-Generated Content at Scale</h3>
+                <h3 class="text-es">Contenido generado por IA a escala</h3>
+                <p class="text-en">AI can generate text, images, answers and reports at unlimited scale. Distinguishing AI output from lived human experience is becoming harder every day.</p>
+                <p class="text-es">La IA puede generar texto, imágenes, respuestas e informes a escala ilimitada. Cada día es más difícil distinguir el contenido generado de la experiencia humana real.</p>
             </div>
 
             <div class="problem-card">
-                <div class="card-icon">📍</div>
-                <h3>Siloed Reputation</h3>
-                <p>
-                    Expertise and reputation are locked within platform silos. There's no way to carry credibility and contributions across contexts.
-                </p>
+                <div class="card-icon" aria-hidden="true">🔍</div>
+                <h3 class="text-en">Context and Judgment Are Lost</h3>
+                <h3 class="text-es">El contexto y el criterio se pierden</h3>
+                <p class="text-en">Accurate information does not always carry human context, accountability or judgment. The "correct" answer and the "trusted" answer are not always the same.</p>
+                <p class="text-es">La información correcta no siempre lleva contexto humano, responsabilidad o criterio. La respuesta "correcta" y la respuesta "confiable" no siempre son la misma.</p>
             </div>
 
             <div class="problem-card">
-                <div class="card-icon">💰</div>
-                <h3>Unfair Economics</h3>
-                <p>
-                    Quality contributions often go uncompensated. Intermediaries capture most value while creators remain underpaid.
-                </p>
+                <div class="card-icon" aria-hidden="true">🏛️</div>
+                <h3 class="text-en">Trust Is Becoming Critical</h3>
+                <h3 class="text-es">La confianza se vuelve crítica</h3>
+                <p class="text-en">As AI reshapes how knowledge is created and shared, the ability to verify that something comes from real human experience becomes a foundational need.</p>
+                <p class="text-es">A medida que la IA transforma cómo se crea y comparte el conocimiento, la capacidad de verificar que algo proviene de experiencia humana real se convierte en una necesidad fundamental.</p>
             </div>
 
             <div class="problem-card">
-                <div class="card-icon">👤</div>
-                <h3>Verification Gaps</h3>
-                <p>
-                    Bots and fake accounts are indistinguishable from real humans. There's no cryptographic proof of genuine contribution.
-                </p>
+                <div class="card-icon" aria-hidden="true">🌐</div>
+                <h3 class="text-en">Human Contribution Is Undervalued</h3>
+                <h3 class="text-es">La contribución humana está subvalorada</h3>
+                <p class="text-en">Expertise, lived knowledge and verified participation exist in silos, with no shared way to recognize, carry or build on them across platforms and contexts.</p>
+                <p class="text-es">La experiencia, el conocimiento vivido y la participación verificada existen en silos, sin una forma compartida de reconocerlos, portarlos o construir sobre ellos entre plataformas y contextos.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- IDEA SECTION -->
-<section id="idea" class="idea-section">
+<!-- THE NODRA APPROACH -->
+<section id="approach" class="idea-section" aria-labelledby="approach-heading">
     <div class="section-content">
-        <h2>The Idea</h2>
-
-        <div class="idea-intro">
-            <p>
-                NODRA proposes a future where people can formally contribute <strong>human signal</strong>: validations, observations, reviews, expertise, and verified information. These contributions help improve digital systems, AI tools, datasets,
-                and communities.
-            </p>
-        </div>
+        <h2 id="approach-heading" class="text-en">The NODRA Approach</h2>
+        <h2 class="text-es">El Enfoque NODRA</h2>
+        <p class="section-subtitle text-en">Principles guiding our exploration</p>
+        <p class="section-subtitle text-es">Principios que guían nuestra exploración</p>
 
         <div class="idea-features">
             <div class="idea-feature">
-                <span class="feature-dot">●</span>
-                <h4>Recognized & Valued</h4>
-                <p>Human contributions are formally tracked and weighted by quality and expertise</p>
+                <span class="feature-dot" aria-hidden="true">●</span>
+                <h4 class="text-en">Human Experience First</h4>
+                <h4 class="text-es">La experiencia humana primero</h4>
+                <p class="text-en">Lived knowledge, expert judgment and verified participation are the core inputs we aim to preserve and amplify.</p>
+                <p class="text-es">El conocimiento vivido, el criterio experto y la participación verificada son los insumos principales que buscamos preservar y amplificar.</p>
             </div>
 
             <div class="idea-feature">
-                <span class="feature-dot">●</span>
-                <h4>Portable Identity</h4>
-                <p>Reputation and credentials move with you across platforms and contexts</p>
+                <span class="feature-dot" aria-hidden="true">●</span>
+                <h4 class="text-en">Transparent Contribution</h4>
+                <h4 class="text-es">Contribución transparente</h4>
+                <p class="text-en">Any framework for human signal must be open, auditable and understandable to the people who participate in it.</p>
+                <p class="text-es">Cualquier marco de señal humana debe ser abierto, auditable y comprensible para las personas que participan en él.</p>
             </div>
 
             <div class="idea-feature">
-                <span class="feature-dot">●</span>
-                <h4>Fair Participation</h4>
-                <p>Community-governed rules, transparent mechanisms, decentralized coordination</p>
+                <span class="feature-dot" aria-hidden="true">●</span>
+                <h4 class="text-en">AI as an Amplifier</h4>
+                <h4 class="text-es">La IA como amplificadora</h4>
+                <p class="text-en">AI is a powerful tool. Our goal is to use it to amplify human judgment and context, not to replace the value of human participation.</p>
+                <p class="text-es">La IA es una herramienta poderosa. Nuestro objetivo es usarla para amplificar el criterio y el contexto humano, no para reemplazar el valor de la participación humana.</p>
+            </div>
+
+            <div class="idea-feature">
+                <span class="feature-dot" aria-hidden="true">●</span>
+                <h4 class="text-en">Community-Driven</h4>
+                <h4 class="text-es">Impulsado por la comunidad</h4>
+                <p class="text-en">The direction of NODRA is shaped by researchers, developers, educators and contributors who care about trust in the AI era.</p>
+                <p class="text-es">La dirección de NODRA es moldeada por investigadores, desarrolladores, educadores y colaboradores que se preocupan por la confianza en la era de la IA.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- HUMAN SIGNAL SECTION -->
-<section id="signal" class="signal-section">
+<!-- WHAT WE ARE EXPLORING -->
+<section id="exploring" class="signal-section" aria-labelledby="exploring-heading">
     <div class="section-content">
-        <h2>What is Human Signal?</h2>
-        <p class="section-subtitle">Types of valuable human contribution</p>
+        <h2 id="exploring-heading" class="text-en">What We Are Exploring</h2>
+        <h2 class="text-es">Qué Estamos Explorando</h2>
+        <p class="section-subtitle text-en">Honest lines of work in early development</p>
+        <p class="section-subtitle text-es">Líneas de trabajo honestas en desarrollo temprano</p>
 
         <div class="signal-grid">
             <div class="signal-card">
-                <div class="signal-icon">✍️</div>
-                <h3>Expert Review</h3>
-                <p>Professional evaluation and analysis that improves quality</p>
+                <div class="signal-icon" aria-hidden="true">✅</div>
+                <h3 class="text-en">Human Validation Systems</h3>
+                <h3 class="text-es">Sistemas de validación humana</h3>
+                <p class="text-en">Tools and workflows that let humans verify, attest and signal the quality of information and contributions.</p>
+                <p class="text-es">Herramientas y flujos que permiten a los humanos verificar, atestar y señalar la calidad de la información y las contribuciones.</p>
             </div>
 
             <div class="signal-card">
-                <div class="signal-icon">✓</div>
-                <h3>Verification</h3>
-                <p>Fact-checking and validation that reduces misinformation</p>
+                <div class="signal-icon" aria-hidden="true">🧠</div>
+                <h3 class="text-en">Trusted Knowledge</h3>
+                <h3 class="text-es">Conocimiento confiable</h3>
+                <p class="text-en">Ways to identify and carry knowledge grounded in real human experience rather than purely AI generation.</p>
+                <p class="text-es">Formas de identificar y portar conocimiento fundamentado en experiencia humana real, más que en generación puramente por IA.</p>
             </div>
 
             <div class="signal-card">
-                <div class="signal-icon">🌍</div>
-                <h3>Local Knowledge</h3>
-                <p>Ground truth and context that only humans in place can provide</p>
+                <div class="signal-icon" aria-hidden="true">🤝</div>
+                <h3 class="text-en">Contribution Models</h3>
+                <h3 class="text-es">Modelos de contribución</h3>
+                <p class="text-en">Community-based approaches to participation, feedback and collaborative knowledge building that are transparent and open.</p>
+                <p class="text-es">Enfoques comunitarios para la participación, retroalimentación y construcción colaborativa de conocimiento, transparentes y abiertos.</p>
             </div>
 
             <div class="signal-card">
-                <div class="signal-icon">🎯</div>
-                <h3>Judgment</h3>
-                <p>Decisions about what matters, what's true, what's ethical</p>
+                <div class="signal-icon" aria-hidden="true">📡</div>
+                <h3 class="text-en">Signals of Human Participation</h3>
+                <h3 class="text-es">Señales de participación humana</h3>
+                <p class="text-en">Indicators that help distinguish human judgment, lived experience and genuine contribution from automated outputs.</p>
+                <p class="text-es">Indicadores que ayudan a distinguir el criterio humano, la experiencia vivida y la contribución genuina de los resultados automatizados.</p>
             </div>
 
             <div class="signal-card">
-                <div class="signal-icon">💡</div>
-                <h3>Insight</h3>
-                <p>Identifying patterns and possibilities that guide AI systems</p>
+                <div class="signal-icon" aria-hidden="true">🔗</div>
+                <h3 class="text-en">Human + AI Collaboration</h3>
+                <h3 class="text-es">Colaboración Humano + IA</h3>
+                <p class="text-en">Tools that connect AI output with human judgment, context and accountability in a meaningful and verifiable way.</p>
+                <p class="text-es">Herramientas que conectan el resultado de la IA con el criterio humano, el contexto y la responsabilidad de forma significativa y verificable.</p>
             </div>
 
             <div class="signal-card">
-                <div class="signal-icon">📝</div>
-                <h3>Creation</h3>
-                <p>Original content and work that provides value and learning data</p>
-            </div>
-
-            <div class="signal-card">
-                <div class="signal-icon">🤝</div>
-                <h3>Participation</h3>
-                <p>Active engagement in communities and governance decisions</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FUTURE UTILITY SECTION -->
-<section id="utility" class="utility-section">
-    <div class="section-content">
-        <h2>Future Possibilities</h2>
-        <p class="section-subtitle">Potential uses of human signal in a decentralized network</p>
-
-        <div class="utility-grid">
-            <div class="utility-card">
-                <h3>Content Verification</h3>
-                <p>Community verifies claims, news, and information across platforms</p>
-            </div>
-
-            <div class="utility-card">
-                <h3>Expert Directory</h3>
-                <p>Searchable registry of verified expertise across any domain</p>
-            </div>
-
-            <div class="utility-card">
-                <h3>AI Training Data</h3>
-                <p>Verified human signal feeds quality training data to ML systems</p>
-            </div>
-
-            <div class="utility-card">
-                <h3>Quality Assurance</h3>
-                <p>Platforms source verification and quality checks from the network</p>
-            </div>
-
-            <div class="utility-card">
-                <h3>Decentralized Oracles</h3>
-                <p>Network provides verified real-world data to smart contracts</p>
-            </div>
-
-            <div class="utility-card">
-                <h3>Community Governance</h3>
-                <p>DAOs and organizations make decisions using weighted human signal</p>
+                <div class="signal-icon" aria-hidden="true">🔒</div>
+                <h3 class="text-en">Digital Trust Infrastructure</h3>
+                <h3 class="text-es">Infraestructura de confianza digital</h3>
+                <p class="text-en">Exploring the ethical and responsible use of transparent technologies to support verifiable human participation.</p>
+                <p class="text-es">Explorando el uso ético y responsable de tecnologías transparentes para apoyar la participación humana verificable.</p>
             </div>
         </div>
 
         <div class="utility-notice">
-            <strong>⚠️ Important Notice:</strong>
-            <p>
-                These are exploratory use cases. NODRA is currently in Phase 1 — identity and documentation only. No economic system, rewards, or token currently exists.
-            </p>
+            <p class="text-en">⚠️ These are areas of exploration, not finished products. NODRA is in an early research and community-building phase.</p>
+            <p class="text-es">⚠️ Estas son áreas de exploración, no productos terminados. NODRA se encuentra en una fase temprana de investigación y construcción de comunidad.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CURRENT STAGE -->
+<section id="status" class="status-section" aria-labelledby="status-heading">
+    <div class="section-content">
+        <h2 id="status-heading" class="text-en">Current Stage</h2>
+        <h2 class="text-es">Etapa Actual</h2>
+
+        <div class="status-info">
+            <h3 class="text-en">Phase 1 — Foundation</h3>
+            <h3 class="text-es">Fase 1 — Fundación</h3>
+            <p class="text-en">NODRA is in an early phase focused on research, concept definition, community building and first MVP design. No economic system, reward mechanism or financial product exists or is being offered.</p>
+            <p class="text-es">NODRA se encuentra en una fase temprana enfocada en investigación, definición conceptual, construcción de comunidad y diseño del primer MVP. No existe ni se ofrece ningún sistema económico, mecanismo de recompensa ni producto financiero.</p>
+
+            <div class="status-checklist">
+                <div class="status-item status-done">
+                    <span class="status-icon" aria-hidden="true">✅</span>
+                    <span class="text-en">Vision and concept defined</span>
+                    <span class="text-es">Visión y concepto definidos</span>
+                </div>
+                <div class="status-item status-done">
+                    <span class="status-icon" aria-hidden="true">✅</span>
+                    <span class="text-en">Public documentation published</span>
+                    <span class="text-es">Documentación pública publicada</span>
+                </div>
+                <div class="status-item status-done">
+                    <span class="status-icon" aria-hidden="true">✅</span>
+                    <span class="text-en">Open source code on GitHub</span>
+                    <span class="text-es">Código de código abierto en GitHub</span>
+                </div>
+                <div class="status-item status-active">
+                    <span class="status-icon" aria-hidden="true">🔄</span>
+                    <span class="text-en">Building early community</span>
+                    <span class="text-es">Construyendo comunidad temprana</span>
+                </div>
+                <div class="status-item status-active">
+                    <span class="status-icon" aria-hidden="true">🔄</span>
+                    <span class="text-en">Seeking collaborators and researchers</span>
+                    <span class="text-es">Buscando colaboradores e investigadores</span>
+                </div>
+                <div class="status-item status-next">
+                    <span class="status-icon" aria-hidden="true">⏳</span>
+                    <span class="text-en">First MVP design — upcoming</span>
+                    <span class="text-es">Diseño del primer MVP — próximamente</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ROADMAP SECTION -->
-<section id="roadmap" class="roadmap-section">
+<section id="roadmap" class="roadmap-section" aria-labelledby="roadmap-heading">
     <div class="section-content">
-        <h2>Roadmap</h2>
-        <p class="section-subtitle">Five-phase development plan</p>
+        <h2 id="roadmap-heading" class="text-en">Roadmap</h2>
+        <h2 class="text-es">Hoja de Ruta</h2>
+        <p class="section-subtitle text-en">Our development path, phase by phase</p>
+        <p class="section-subtitle text-es">Nuestro camino de desarrollo, fase por fase</p>
 
         <div class="roadmap-phases">
             <div class="phase">
                 <div class="phase-header">
                     <span class="phase-number">1</span>
-                    <h3>Identity & Vision</h3>
-                    <span class="phase-badge-current">Current</span>
+                    <h3 class="text-en">Foundation</h3>
+                    <h3 class="text-es">Fundación</h3>
+                    <span class="phase-badge-current text-en">Current</span>
+                    <span class="phase-badge-current text-es">Actual</span>
                 </div>
-                <p>Landing page, documentation, branding, and community foundation</p>
+                <p class="text-en">Vision, research, documentation and community communication.</p>
+                <p class="text-es">Visión, investigación, documentación y comunicación con la comunidad.</p>
             </div>
 
             <div class="phase">
                 <div class="phase-header">
                     <span class="phase-number">2</span>
-                    <h3>Community</h3>
+                    <h3 class="text-en">First MVP</h3>
+                    <h3 class="text-es">Primer MVP</h3>
                 </div>
-                <p>Spaces for discussion, contribution guidelines, and early recognition</p>
+                <p class="text-en">Define one specific use case, prototype a human validation workflow and test with real users.</p>
+                <p class="text-es">Definir un caso de uso específico, prototipar un flujo de validación humana y probar con usuarios reales.</p>
             </div>
 
             <div class="phase">
                 <div class="phase-header">
                     <span class="phase-number">3</span>
-                    <h3>Prototype</h3>
+                    <h3 class="text-en">Contribution System</h3>
+                    <h3 class="text-es">Sistema de Contribución</h3>
                 </div>
-                <p>Core signal system, identity framework, and verification mechanisms</p>
+                <p class="text-en">Community participation, reputation and contribution signals, and transparent validation processes.</p>
+                <p class="text-es">Participación comunitaria, señales de reputación y contribución, y procesos de validación transparentes.</p>
             </div>
 
             <div class="phase">
                 <div class="phase-header">
                     <span class="phase-number">4</span>
-                    <h3>Token Exploration</h3>
+                    <h3 class="text-en">Ecosystem</h3>
+                    <h3 class="text-es">Ecosistema</h3>
                 </div>
-                <p>Technical design, legal research, and community governance on whether to proceed</p>
+                <p class="text-en">Integrations, partnerships and scalable tools. Possible use of experimental infrastructure, only if useful and justified.</p>
+                <p class="text-es">Integraciones, alianzas y herramientas escalables. Posible uso de infraestructura experimental, solo si resulta útil y justificado.</p>
             </div>
-
-            <div class="phase">
-                <div class="phase-header">
-                    <span class="phase-number">5</span>
-                    <h3>Ecosystem</h3>
-                </div>
-                <p>Public launch, integrations, and expansion (conditional on Phase 4 success)</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- STATUS SECTION -->
-<section id="status" class="status-section">
-    <div class="section-content">
-        <h2>Current Status</h2>
-
-        <div class="status-info">
-            <h3>Phase 1 — Identity & Vision</h3>
-            <p>
-                NODRA Network is currently in early conceptual stages. We are building public identity, documentation, and gathering community interest. There is no active token, no blockchain integration, no financial system, and no promises of value or returns.
-            </p>
-            <p>
-                This is an experimental project exploring how human signal could be organized in a decentralized context. We are transparent about risks and timelines.
-            </p>
-            <p>
-                All code is open source. Documentation is public. Community feedback shapes our direction. See the complete roadmap and project status for detailed information.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- DISCLAIMER SECTION -->
-<section id="disclaimer" class="disclaimer-section">
-    <div class="section-content">
-        <div class="disclaimer-content">
-            <h3>⚠️ Important Disclaimer</h3>
-            <p>
-                <strong>NODRA Network is an experimental project.</strong> This is not a financial offering, investment opportunity, or business opportunity.
-            </p>
-            <p>
-                There is no active token, no cryptocurrency, no rewards system, and no financial transactions. Any future implementation would require legal, accounting, and regulatory review.
-            </p>
-            <p>
-                This project offers no guarantee of success, completion, or future value. The concept may change radically or be abandoned at any time. Participation assumes all responsibility for your own due diligence and compliance.
-            </p>
-            <p>
-                Any future token-related implementation will be subject to technical, legal, accounting and regulatory review.
-            </p>
         </div>
     </div>
 </section>
 
 <!-- DOCUMENTATION SECTION -->
-<section id="documentation" class="documentation-section">
+<section id="documentation" class="documentation-section" aria-labelledby="docs-heading">
     <div class="section-content">
-        <h2>Documentation</h2>
-        <p class="section-description">Learn more about NODRA Network through our comprehensive documentation</p>
+        <h2 id="docs-heading" class="text-en">Documentation</h2>
+        <h2 class="text-es">Documentación</h2>
+        <p class="section-description text-en">Transparent and public documentation for the NODRA project</p>
+        <p class="section-description text-es">Documentación transparente y pública del proyecto NODRA</p>
 
         <div class="documentation-grid">
             <div class="doc-card">
                 <h3>📄 Whitepaper (Lite)</h3>
-                <p>Complete vision, problem statement, proposed solution, and technical approach for human signal framework.</p>
+                <p class="text-en">Vision, problem statement, proposed approach and technical overview for the human signal framework.</p>
+                <p class="text-es">Visión, problema, enfoque propuesto y descripción técnica del marco de señal humana.</p>
                 <div class="doc-link-info">
                     <code>/docs/whitepaper-lite.md</code>
-                    <span class="doc-status">Phase 1</span>
+                    <span class="doc-status text-en">Phase 1</span>
+                    <span class="doc-status text-es">Fase 1</span>
                 </div>
             </div>
 
             <div class="doc-card">
-                <h3>🗓️ Roadmap</h3>
-                <p>5-phase development timeline with objectives, deliverables, milestones, and success criteria for each phase.</p>
+                <h3>🗓️ <span class="text-en">Roadmap</span><span class="text-es">Hoja de Ruta</span></h3>
+                <p class="text-en">Development phases, objectives and milestones for each stage of NODRA.</p>
+                <p class="text-es">Fases de desarrollo, objetivos e hitos para cada etapa de NODRA.</p>
                 <div class="doc-link-info">
                     <code>/docs/roadmap.md</code>
-                    <span class="doc-status">Phase 1</span>
+                    <span class="doc-status text-en">Phase 1</span>
+                    <span class="doc-status text-es">Fase 1</span>
                 </div>
             </div>
 
             <div class="doc-card">
-                <h3>📊 Project Status</h3>
-                <p>Current implementation details, what exists, what doesn't, feature completion status, and build metrics.</p>
+                <h3>📊 <span class="text-en">Project Status</span><span class="text-es">Estado del Proyecto</span></h3>
+                <p class="text-en">Current implementation details, progress status and what is actively being developed.</p>
+                <p class="text-es">Detalles de implementación actuales, estado de progreso y qué está siendo desarrollado activamente.</p>
                 <div class="doc-link-info">
                     <code>/docs/project-status.md</code>
-                    <span class="doc-status">Phase 1</span>
+                    <span class="doc-status text-en">Phase 1</span>
+                    <span class="doc-status text-es">Fase 1</span>
                 </div>
             </div>
 
             <div class="doc-card">
-                <h3>⚠️ Risk Notice</h3>
-                <p>Important legal disclaimers, risk analysis, regulatory uncertainty, and complete terms of participation.</p>
+                <h3>⚠️ <span class="text-en">Risk Notice</span><span class="text-es">Aviso de Riesgos</span></h3>
+                <p class="text-en">Legal disclaimers, risk analysis, regulatory considerations and terms of participation.</p>
+                <p class="text-es">Avisos legales, análisis de riesgos, consideraciones regulatorias y términos de participación.</p>
                 <div class="doc-link-info">
                     <code>/docs/risk-notice.md</code>
-                    <span class="doc-status">Critical</span>
+                    <span class="doc-status text-en">Important</span>
+                    <span class="doc-status text-es">Importante</span>
                 </div>
             </div>
         </div>
 
+        <!-- Experimental Infrastructure notice -->
+        <div class="experimental-notice">
+            <h4 class="text-en">🧪 Experimental Infrastructure</h4>
+            <h4 class="text-es">🧪 Infraestructura Experimental</h4>
+            <p class="text-en">An experimental token contract exists on BNB Smart Chain as part of NODRA's early technical exploration. It is not currently offered for sale, has no guaranteed utility or value, and may or may not be used in future development. Contract: <code>0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46</code> — <a role="button" class="experimental-link" (click)="openLink('https://bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46')">BscScan</a></p>
+            <p class="text-es">Existe un contrato de token experimental en BNB Smart Chain como parte de la exploración técnica temprana de NODRA. Actualmente no se ofrece a la venta, no tiene utilidad ni valor garantizados, y puede o no utilizarse en el desarrollo futuro. Contrato: <code>0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46</code> — <a role="button" class="experimental-link" (click)="openLink('https://bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46')">BscScan</a></p>
+        </div>
+
         <div class="documentation-info">
-            <p><strong>How to Access:</strong> Documentation files are in the <code>/docs</code> folder of the project repository. Open any markdown file in your editor or GitHub.</p>
-            <p><strong>README:</strong> Quick start and project overview available in <code>README.md</code> at the project root.</p>
+            <p class="text-en"><strong>How to access:</strong> Documentation files are in the <code>/docs</code> folder of the public repository on <a role="button" class="experimental-link" (click)="openLink('https://github.com/nodraproject-code/nodra-network')">GitHub</a>.</p>
+            <p class="text-es"><strong>Cómo acceder:</strong> Los archivos de documentación están en la carpeta <code>/docs</code> del repositorio público en <a role="button" class="experimental-link" (click)="openLink('https://github.com/nodraproject-code/nodra-network')">GitHub</a>.</p>
         </div>
     </div>
 </section>
 
-<!-- COMMUNITY SECTION -->
-<section id="community" class="community-section">
+<!-- GET INVOLVED / COMMUNITY SECTION -->
+<section id="community" class="community-section" aria-labelledby="community-heading">
     <div class="section-content">
-        <h2>Join the Community</h2>
-        <p class="section-subtitle">Be part of the early Phase 2 NODRA community</p>
+        <h2 id="community-heading" class="text-en">Get Involved</h2>
+        <h2 class="text-es">Participa</h2>
+        <p class="section-subtitle text-en">NODRA is an early initiative open to people interested in building trust and preserving human value in the AI era.</p>
+        <p class="section-subtitle text-es">NODRA es una iniciativa en etapa temprana, abierta a personas interesadas en construir confianza y preservar el valor humano en la era de la inteligencia artificial.</p>
 
         <div class="community-intro">
-            <p>
-                NODRA Network is building its early public community around <strong>Human Signal</strong>, <strong>AI-era validation</strong>, <strong>open documentation</strong> and <strong>transparent technical progress</strong>.
-            </p>
+            <p class="text-en">We are looking for developers, researchers, designers, AI professionals, educators, organizations and early contributors who want to help explore, build and discuss the future of human signal.</p>
+            <p class="text-es">Buscamos desarrolladores, investigadores, diseñadores, profesionales de IA, educadores, organizaciones y colaboradores tempranos que quieran ayudar a explorar, construir y discutir el futuro de la señal humana.</p>
         </div>
 
-        <!-- Community Important Notice -->
-        <div class="community-notice">
-            <h4>📢 Important</h4>
-            <p>
-                <strong>NODRA Network has an official mainnet contract deployed,</strong> but there is <strong>no presale</strong>, <strong>no airdrop</strong>, <strong>no DEX liquidity</strong>, <strong>no exchange listing</strong> and <strong>trading is not active</strong> at this stage.
-            </p>
-            <p>
-                We are building in the open with transparent communication. All community members are welcome to participate in discussions, contribute to documentation, and help shape the direction of NODRA Network.
-            </p>
+        <div class="involve-grid">
+            <div class="involve-card">
+                <div class="involve-icon" aria-hidden="true">💻</div>
+                <h3 class="text-en">Developers</h3>
+                <h3 class="text-es">Desarrolladores</h3>
+                <p class="text-en">Contribute to open source tooling, validation prototypes and the NODRA technical framework.</p>
+                <p class="text-es">Contribuye a herramientas de código abierto, prototipos de validación y el marco técnico de NODRA.</p>
+            </div>
+            <div class="involve-card">
+                <div class="involve-icon" aria-hidden="true">🔬</div>
+                <h3 class="text-en">Researchers</h3>
+                <h3 class="text-es">Investigadores</h3>
+                <p class="text-en">Help define what human validation means, how it can be measured and what frameworks could support it.</p>
+                <p class="text-es">Ayuda a definir qué significa la validación humana, cómo puede medirse y qué marcos podrían apoyarla.</p>
+            </div>
+            <div class="involve-card">
+                <div class="involve-icon" aria-hidden="true">🎓</div>
+                <h3 class="text-en">Educators</h3>
+                <h3 class="text-es">Educadores</h3>
+                <p class="text-en">Bring critical thinking, AI literacy and human-centered perspectives to the conversation.</p>
+                <p class="text-es">Aporta pensamiento crítico, alfabetización en IA y perspectivas centradas en el ser humano a la conversación.</p>
+            </div>
+            <div class="involve-card">
+                <div class="involve-icon" aria-hidden="true">🏛️</div>
+                <h3 class="text-en">Organizations</h3>
+                <h3 class="text-es">Organizaciones</h3>
+                <p class="text-en">Academic institutions, editorial platforms, research groups and digital trust communities are welcome.</p>
+                <p class="text-es">Instituciones académicas, plataformas editoriales, grupos de investigación y comunidades de confianza digital son bienvenidos.</p>
+            </div>
         </div>
 
-        <!-- Email CTA -->
         <div class="community-email">
-            <p>Have questions or want to reach us directly?</p>
-            <a href="mailto:contact@nodranetwork.com" class="email-link">Contact us at contact&#64;nodranetwork.com</a>
+            <p class="text-en">Have questions or want to get involved?</p>
+            <p class="text-es">¿Tienes preguntas o quieres participar?</p>
+            <a href="mailto:contact@nodranetwork.com" class="email-link">contact&#64;nodranetwork.com</a>
         </div>
     </div>
 </section>
 
 <!-- FOUNDER SECTION -->
-<section id="founder" class="founder-section">
+<section id="founder" class="founder-section" aria-labelledby="founder-heading">
     <div class="section-content">
-        <h2>Founder</h2>
+        <h2 id="founder-heading" class="text-en">Founder</h2>
+        <h2 class="text-es">Fundador</h2>
 
         <div class="founder-card">
             <div class="founder-info">
                 <h3>Fabián Márquez Hernández</h3>
-                <p class="founder-role">Founder &amp; CEO, NODRA Network</p>
-
-                <p class="founder-bio">
+                <p class="founder-role text-en">Founder &amp; CEO, NODRA Network — Santiago, Chile</p>
+                <p class="founder-role text-es">Fundador y CEO, NODRA Network — Santiago, Chile</p>
+                <p class="founder-bio text-en">
                     NODRA Network was initiated by Fabián Márquez Hernández as an independent digital project focused on <strong>Human Signal</strong>, community contribution, validation and the role of human expertise in the age of artificial intelligence.
                 </p>
-
-                <p class="founder-bio">
-                    This project represents an open exploration of how human contributions could be recognized, valued and coordinated in a decentralized context. All work is conducted transparently, with documentation published and community feedback actively welcomed.
+                <p class="founder-bio text-es">
+                    NODRA Network fue iniciado por Fabián Márquez Hernández como un proyecto digital independiente enfocado en la <strong>Señal Humana</strong>, la contribución comunitaria, la validación y el rol de la experiencia humana en la era de la inteligencia artificial.
                 </p>
+                <p class="founder-bio text-en">All work is conducted transparently, with documentation published and community feedback actively welcomed.</p>
+                <p class="founder-bio text-es">Todo el trabajo se realiza con transparencia, con documentación publicada y retroalimentación comunitaria activamente bienvenida.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- COLLABORATE SECTION -->
-<section id="collaborate" class="collaborate-section">
+<section id="collaborate" class="collaborate-section" aria-labelledby="collaborate-heading">
     <div class="section-content">
-
-        <h2 class="text-en">Collaborate with NODRA Network</h2>
+        <h2 id="collaborate-heading" class="text-en">Collaborate with NODRA Network</h2>
         <h2 class="text-es">Colabora con NODRA Network</h2>
         <p class="section-subtitle text-en">Human Signal for the AI Era requires serious discussion, research, validation and real-world collaboration.</p>
         <p class="section-subtitle text-es">Human Signal for the AI Era requiere conversación seria, investigación, validación y colaboración real.</p>
@@ -474,31 +528,30 @@
             <p class="text-es">Nuestro enfoque no es la especulación financiera. Nuestro enfoque es explorar cómo la contribución humana, la experiencia, el criterio y el conocimiento experto pueden convertirse en una capa reconocida de valor en un mundo cada vez más influenciado por contenido generado por IA y razonamiento automatizado.</p>
         </div>
 
-        <!-- Collaboration Cards -->
         <div class="collab-cards">
             <div class="collab-card">
-                <div class="collab-card-icon">🔬</div>
+                <div class="collab-card-icon" aria-hidden="true">🔬</div>
                 <h3 class="text-en">Research &amp; Discussion</h3>
                 <h3 class="text-es">Investigación y Conversación</h3>
                 <p class="text-en">Explore the role of human judgment, lived experience and expert validation in AI-assisted knowledge systems.</p>
                 <p class="text-es">Explorar el rol del criterio humano, la experiencia vivida y la validación experta en sistemas de conocimiento asistidos por IA.</p>
             </div>
             <div class="collab-card">
-                <div class="collab-card-icon">📰</div>
+                <div class="collab-card-icon" aria-hidden="true">📰</div>
                 <h3 class="text-en">Scientific &amp; Editorial Collaboration</h3>
                 <h3 class="text-es">Colaboración Científica y Editorial</h3>
                 <p class="text-en">Collaborate around human-authored content, editorial validation, knowledge quality and responsible AI communication.</p>
                 <p class="text-es">Colaborar en torno a contenido creado por humanos, validación editorial, calidad del conocimiento y comunicación responsable sobre IA.</p>
             </div>
             <div class="collab-card">
-                <div class="collab-card-icon">🤝</div>
+                <div class="collab-card-icon" aria-hidden="true">🤝</div>
                 <h3 class="text-en">Community Contribution</h3>
                 <h3 class="text-es">Contribución Comunitaria</h3>
                 <p class="text-en">Help translate, review, document and discuss the Human Signal framework through open and transparent participation.</p>
                 <p class="text-es">Ayudar a traducir, revisar, documentar y discutir el marco Human Signal mediante participación abierta y transparente.</p>
             </div>
             <div class="collab-card">
-                <div class="collab-card-icon">🧪</div>
+                <div class="collab-card-icon" aria-hidden="true">🧪</div>
                 <h3 class="text-en">Pilot Concepts</h3>
                 <h3 class="text-es">Conceptos Piloto</h3>
                 <p class="text-en">Explore early pilots for human validation, contribution tracking, trust signals and AI-era knowledge frameworks.</p>
@@ -506,66 +559,11 @@
             </div>
         </div>
 
-        <!-- Who We Want to Collaborate With -->
-        <div class="collab-two-col">
-            <div class="collab-list-block">
-                <h3 class="text-en">Who We Want to Collaborate With</h3>
-                <h3 class="text-es">Con Quiénes Queremos Colaborar</h3>
-                <ul class="collab-list text-en">
-                    <li>AI researchers and ethics communities</li>
-                    <li>Scientific magazines and editorial platforms</li>
-                    <li>Universities and academic groups</li>
-                    <li>Digital trust and Web3 communities</li>
-                    <li>Independent researchers and writers</li>
-                    <li>Human knowledge and education projects</li>
-                    <li>Technology media and science communicators</li>
-                    <li>Organizations exploring responsible AI</li>
-                </ul>
-                <ul class="collab-list text-es">
-                    <li>Investigadores de IA y comunidades de ética tecnológica</li>
-                    <li>Revistas científicas y plataformas editoriales</li>
-                    <li>Universidades y grupos académicos</li>
-                    <li>Comunidades de confianza digital y Web3</li>
-                    <li>Investigadores y escritores independientes</li>
-                    <li>Proyectos de conocimiento humano y educación</li>
-                    <li>Medios tecnológicos y divulgadores científicos</li>
-                    <li>Organizaciones que exploran IA responsable</li>
-                </ul>
-            </div>
-            <div class="collab-list-block">
-                <h3 class="text-en">What NODRA Is Looking For</h3>
-                <h3 class="text-es">Qué Busca NODRA</h3>
-                <p class="collab-looking-intro text-en">NODRA is currently looking for serious conversations, feedback and early collaboration around:</p>
-                <p class="collab-looking-intro text-es">Actualmente NODRA busca conversaciones serias, retroalimentación y colaboración inicial en torno a:</p>
-                <ul class="collab-list text-en">
-                    <li>Human validation in AI-generated environments</li>
-                    <li>Human-authored knowledge and editorial trust</li>
-                    <li>Contribution frameworks</li>
-                    <li>Community-based knowledge review</li>
-                    <li>Responsible AI communication</li>
-                    <li>Digital trust infrastructure</li>
-                    <li>Ethical use of blockchain for transparency</li>
-                    <li>Non-financial participation models</li>
-                </ul>
-                <ul class="collab-list text-es">
-                    <li>Validación humana en entornos generados por IA</li>
-                    <li>Conocimiento creado por humanos y confianza editorial</li>
-                    <li>Marcos de contribución</li>
-                    <li>Revisión comunitaria del conocimiento</li>
-                    <li>Comunicación responsable sobre IA</li>
-                    <li>Infraestructura de confianza digital</li>
-                    <li>Uso ético de blockchain para transparencia</li>
-                    <li>Modelos de participación no financieros</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- CTA -->
         <div class="collab-cta">
             <h3 class="text-en">Start a Collaboration Conversation</h3>
             <h3 class="text-es">Iniciar una Conversación de Colaboración</h3>
-            <p class="text-en">If you represent a publication, research group, AI community, educational initiative, institution or independent project interested in Human Signal for the AI Era, contact NODRA Network.</p>
-            <p class="text-es">Si representas una publicación, grupo de investigación, comunidad de IA, iniciativa educativa, institución o proyecto independiente interesado en Human Signal for the AI Era, contacta a NODRA Network.</p>
+            <p class="text-en">If you represent a publication, research group, AI community, educational initiative, institution or independent project, contact NODRA Network.</p>
+            <p class="text-es">Si representas una publicación, grupo de investigación, comunidad de IA, iniciativa educativa, institución o proyecto independiente, contacta a NODRA Network.</p>
             <div class="collab-cta-buttons">
                 <a href="mailto:contact@nodranetwork.com?subject=Collaboration%20with%20NODRA%20Network" class="btn btn-primary collab-btn">
                     <span class="text-en">Contact NODRA</span>
@@ -578,132 +576,66 @@
             </div>
         </div>
 
-        <!-- Important Notice -->
         <div class="collab-notice">
             <h4 class="text-en">⚠️ Important Notice</h4>
             <h4 class="text-es">⚠️ Aviso Importante</h4>
             <p class="text-en">NODRA Network is an early-stage digital project. Collaboration inquiries are focused on research, documentation, education, community and responsible AI discussion. NODRA does not offer financial advice, guaranteed returns, token appreciation or investment opportunities.</p>
             <p class="text-es">NODRA Network es un proyecto digital en etapa temprana. Las solicitudes de colaboración están enfocadas en investigación, documentación, educación, comunidad y discusión responsable sobre IA. NODRA no ofrece asesoría financiera, retornos garantizados, valorización del token ni oportunidades de inversión.</p>
         </div>
-
-    </div>
-</section>
-
-<!-- OFFICIAL CONTRACT SECTION -->
-<section id="contract" class="contract-section">
-    <div class="section-content">
-        <h2>Official Contract</h2>
-        <p class="section-subtitle">NODRA Network Token on BNB Smart Chain</p>
-
-        <div class="contract-container">
-            <div class="contract-info">
-                <h3>NODRA Network Token</h3>
-                <p>Official mainnet contract deployed on BNB Smart Chain Mainnet.</p>
-
-                <div class="contract-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Token Name:</span>
-                        <span class="detail-value">NODRA Network</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Symbol:</span>
-                        <span class="detail-value">NODRA</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Network:</span>
-                        <span class="detail-value">BNB Smart Chain Mainnet (ChainID: 56)</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Total Supply:</span>
-                        <span class="detail-value">1,000,000,000 NODRA</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Decimals:</span>
-                        <span class="detail-value">18</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Standard:</span>
-                        <span class="detail-value">ERC20 (OpenZeppelin)</span>
-                    </div>
-                </div>
-
-                <div class="contract-address">
-                    <p><strong>Contract Address:</strong></p>
-                    <code class="address-code">0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46</code>
-                </div>
-
-                <div class="contract-status">
-                    <h4>⚠️ Important Notice</h4>
-                    <p>
-                        <strong>No presale</strong> • <strong>No airdrop</strong> • <strong>No DEX liquidity</strong> • <strong>No exchange listing</strong> • <strong>Trading is not active</strong> at this stage.
-                    </p>
-                    <p>
-                        The official mainnet contract exists to establish NODRA nomenclature and prepare for future development. All tokens remain with the deployer. No market trading, liquidity, or exchange integration is currently planned or available.
-                    </p>
-                </div>
-
-                <div class="contract-links">
-                    <a href="#" class="contract-link" (click)="openLink('https://bscscan.com/token/0xFBCEB575654bAe6e1376Cd82C6355C2cbae28F46')">View on BscScan</a>
-                    <a href="#" class="contract-link" (click)="openLink('https://github.com/nodraproject-code/nodra-network')">GitHub Repository</a>
-                </div>
-
-                <div class="contract-transparency">
-                    <h4>Treasury & Liquidity Transparency</h4>
-                    <p>NODRA Network maintains separate wallets for governance clarity:</p>
-                    <div class="transparency-wallets">
-                        <div class="wallet-item">
-                            <span class="wallet-label">Founder/Deployer:</span>
-                            <code>0x3550b4E95636e41B5FBbE13F300868144D30E4bA</code>
-                        </div>
-                        <div class="wallet-item">
-                            <span class="wallet-label">Treasury:</span>
-                            <code>0x16b27c6fCC8fd44Ff3E202fFDCFa078727F39Fb3</code>
-                        </div>
-                        <div class="wallet-item">
-                            <span class="wallet-label">Liquidity:</span>
-                            <code>0x42eA5759948C93BEC569d6a283a349e023f4fE6E</code>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #b0b0b0; margin-top: 1rem;">
-                        See <strong>NODRA Access Policy</strong> and <strong>Liquidity Policy</strong> in documentation for details on Early Support Allocation and future liquidity exploration.
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <div class="footer-content">
         <div class="footer-section">
             <h3>NODRA Network</h3>
             <p>Human Signal for the AI Era</p>
+            <p class="footer-tagline text-en">An early-stage initiative exploring human validation in the AI era.</p>
+            <p class="footer-tagline text-es">Una iniciativa en etapa temprana que explora la validación humana en la era de la IA.</p>
         </div>
         <div class="footer-section">
-            <h4>Follow Us</h4>
+            <h4 class="text-en">Follow Us</h4>
+            <h4 class="text-es">Síguenos</h4>
             <div class="social-links">
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://x.com/NODRAnetwork')">X / Twitter</a>
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://t.me/nodranetwork')">Telegram</a>
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm')">Reddit</a>
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://discord.gg/pPj2G3D5Z')">Discord</a>
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://www.instagram.com/nodraproject/')">Instagram</a>
-                <a role="button" class="social-link" (click)="$event.preventDefault(); openLink('https://www.linkedin.com/company/nodra-network')">LinkedIn</a>
+                <a href="https://x.com/NODRAnetwork" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on X / Twitter" title="NODRA Network on X / Twitter">X / Twitter</a>
+                <a href="https://t.me/nodranetwork" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on Telegram" title="NODRA Network on Telegram">Telegram</a>
+                <a href="https://www.reddit.com/u/NODRAnetwork/s/wFoTmMX7Xm" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on Reddit" title="NODRA Network on Reddit">Reddit</a>
+                <a href="https://discord.gg/pPj2G3D5Z" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on Discord" title="NODRA Network on Discord">Discord</a>
+                <a href="https://www.instagram.com/nodraproject/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on Instagram" title="NODRA Network on Instagram">Instagram</a>
+                <a href="https://www.linkedin.com/company/nodra-network" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on LinkedIn" title="NODRA Network on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/nodraproject-code/nodra-network" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="NODRA Network on GitHub" title="NODRA Network on GitHub">GitHub</a>
             </div>
         </div>
         <div class="footer-section">
-            <h4>Resources</h4>
+            <h4 class="text-en">Quick Links</h4>
+            <h4 class="text-es">Accesos Rápidos</h4>
             <div class="resource-links">
-                <a href="#" class="resource-link">Whitepaper</a>
-                <a href="#" class="resource-link">Documentation</a>
-                <a role="button" class="resource-link" (click)="$event.preventDefault(); openLink('mailto:contact@nodranetwork.com')">Contact</a>
+                <a href="#" (click)="scrollTo('vision')" class="resource-link">
+                    <span class="text-en">Vision</span>
+                    <span class="text-es">Visión</span>
+                </a>
+                <a href="#" (click)="scrollTo('roadmap')" class="resource-link">
+                    <span class="text-en">Roadmap</span>
+                    <span class="text-es">Hoja de Ruta</span>
+                </a>
+                <a href="#" (click)="scrollTo('documentation')" class="resource-link">
+                    <span class="text-en">Documentation</span>
+                    <span class="text-es">Documentación</span>
+                </a>
+                <a href="mailto:contact@nodranetwork.com" class="resource-link">
+                    <span class="text-en">Contact</span>
+                    <span class="text-es">Contacto</span>
+                </a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="footer-bottom-content">
-            <p>&copy; 2026 NODRA Network. All rights reserved.</p>
+            <p>&copy; 2026 NODRA Network. <span class="text-en">All rights reserved.</span><span class="text-es">Todos los derechos reservados.</span></p>
             <p class="founder-credit">Founder &amp; CEO: Fabián Márquez Hernández</p>
+            <p class="footer-legal text-en">NODRA Network is an experimental early-stage project. Nothing on this site constitutes financial advice or an investment opportunity.</p>
+            <p class="footer-legal text-es">NODRA Network es un proyecto experimental en etapa temprana. Nada en este sitio constituye asesoramiento financiero ni oportunidad de inversión.</p>
         </div>
     </div>
 </footer>

@@ -1786,10 +1786,21 @@ html {
    MULTILINGUAL SUPPORT — Language visibility rules
    ============================================================ */
 
-:host.lang-en .text-es { display: none; }
-:host.lang-es .text-en { display: none; }
-:host.lang-en .desc-es { display: none; }
-:host.lang-es .desc-en { display: none; }
+:host.lang-en .text-es {
+    display: none;
+}
+
+:host.lang-es .text-en {
+    display: none;
+}
+
+:host.lang-en .desc-es {
+    display: none;
+}
+
+:host.lang-es .desc-en {
+    display: none;
+}
 
 
 /* LANGUAGE SELECTOR */
@@ -1899,7 +1910,9 @@ html {
     margin-bottom: 1rem;
 }
 
+
 /* Collaboration Cards */
+
 .collab-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1939,7 +1952,9 @@ html {
     line-height: 1.7;
 }
 
+
 /* Two-column who/looking layout */
+
 .collab-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1987,7 +2002,9 @@ html {
     font-weight: 700;
 }
 
+
 /* CTA block */
+
 .collab-cta {
     background: rgba(0, 255, 255, 0.04);
     border: 1px solid rgba(0, 255, 255, 0.15);
@@ -2023,7 +2040,9 @@ html {
     min-width: 180px;
 }
 
+
 /* Important Notice */
+
 .collab-notice {
     background: rgba(255, 204, 0, 0.04);
     border: 1px solid rgba(255, 204, 0, 0.2);
@@ -2044,7 +2063,9 @@ html {
     line-height: 1.7;
 }
 
+
 /* Responsive */
+
 @media (max-width: 768px) {
     .collab-two-col {
         grid-template-columns: 1fr;
@@ -2076,4 +2097,217 @@ html {
     .collab-notice {
         padding: 1.25rem;
     }
+}
+
+
+/* ============================================================
+   STATUS CHECKLIST
+   ============================================================ */
+
+.status-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+.status-done {
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid rgba(0, 255, 65, 0.18);
+}
+
+.status-active {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.18);
+}
+
+.status-next {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #888;
+}
+
+.status-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+
+/* ============================================================
+   INVOLVE GRID (Get Involved / Community)
+   ============================================================ */
+
+.involve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 2.5rem;
+}
+
+.involve-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.involve-card:hover {
+    border-color: rgba(0, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.involve-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.involve-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00ffff;
+    margin-bottom: 0.6rem;
+}
+
+.involve-card p {
+    font-size: 0.875rem;
+    color: #999;
+    line-height: 1.65;
+}
+
+
+/* ============================================================
+   EXPERIMENTAL INFRASTRUCTURE NOTICE
+   ============================================================ */
+
+.experimental-notice {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.experimental-notice h4 {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.experimental-notice p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.experimental-notice code {
+    font-size: 0.78rem;
+    color: #999;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+}
+
+.experimental-link {
+    color: rgba(0, 255, 255, 0.6);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.experimental-link:hover {
+    color: #00ffff;
+}
+
+
+/* ============================================================
+   FOOTER ADDITIONS
+   ============================================================ */
+
+.footer-tagline {
+    font-size: 0.82rem;
+    color: #555;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.footer-legal {
+    font-size: 0.78rem;
+    color: #444;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+/* ============================================================
+   HERO H1 FIX (was H2 before)
+   ============================================================ */
+
+.hero-title {
+    font-size: clamp(2.2rem, 7vw, 3.8rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #e0e0e0, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ============================================================
+   SECTION H2 — ensure both text-en and text-es h2 display block
+   ============================================================ */
+
+.section-content h2 {
+    display: block;
+}
+
+:host.lang-en .section-content h2.text-es,
+:host.lang-es .section-content h2.text-en {
+    display: none;
+}
+
+
+/* ============================================================
+   PHASE HEADER — bilingual h3 fix
+   ============================================================ */
+
+.phase-header h3 {
+    display: inline;
+}
+
+:host.lang-en .phase-header h3.text-es,
+:host.lang-es .phase-header h3.text-en {
+    display: none;
+}
+
+
+/* ============================================================
+   IDEA-FEATURE — bilingual h4 fix
+   ============================================================ */
+
+.idea-feature h4 {
+    display: block;
+}
+
+:host.lang-en .idea-feature h4.text-es,
+:host.lang-es .idea-feature h4.text-en {
+    display: none;
 }
